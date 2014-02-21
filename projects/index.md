@@ -1,8 +1,20 @@
 ---
-layout: post
-title: Test Post
+layout: page
+title: Projects
 ---
 
+#####This is where I will give details about projects I have done, or am currently working on!
+
+Examples:
+
+- [RISC CPU](/projects/risc_cpu)
+- [This website](/)
+- Various CS things
+
+And here is my [Resume](/Resume.pdf "Resume")
+
+
+<!--
 # This is a 1 level header.
 ## This is a 2 level header.
 ### 3 level.
@@ -35,5 +47,4 @@ int foo()
 	return 0;
 }
 ```
-
-<font size="2">Hello is this 2?</font>
+-->
