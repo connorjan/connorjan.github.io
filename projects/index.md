@@ -9,7 +9,7 @@ Examples:
 
 - [RISC CPU](/projects/risc_cpu)
 - [This website](/)
-- Various CS things
+- Various CS things?
 
 And here is my [Resume](/Resume.pdf "Resume")
 

@@ -212,7 +212,9 @@ a.sidebar-nav-item:focus {
   width: 2.2rem;
   padding: .5rem .65rem;
   color: #505050;
-  background-color: #fff;
+
+  /*THIS USED TO BE #FFF */
+  background-color: #F8F8F8 ;
   border-radius: 4px;
   cursor: pointer;
 }

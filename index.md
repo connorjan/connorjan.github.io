@@ -5,12 +5,13 @@ title: Home
 
 #Welcome!
 
-This website is a work in progress, but feel free to look around.
-
+This website is a work in progress, but feel free to look around. <br>
 Click the three bars in the top left corner of the webpage to get around!
 
-Thanks,
+Thanks, <br>
 ###Connor
+
+[Contact me!](/about/#contact-me)
 
 
 <!--
