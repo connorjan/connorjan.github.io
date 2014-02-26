@@ -13,8 +13,22 @@ I am currently looking for a Co-op for 2014 during the Summer, or Summer and Fal
 Digital Systems II last semester, I have been very interested in Digital Logic Design! More information about that
 [here!](http://connorgoldberg.com/projects/risc_cpu)
 
+###Interests
+I love sports (namely Racquetball, Hockey, and Swimming), I enjoy [Geocaching](http://www.geocaching.com), Rubik's Cubes and other puzzles, 
+all things Apple, [Kickstarter](http://www.kickstarter.com), and many other fun things! 
+I also enjoy programming and am familiar with Python, and C++.
+
+###Educational Things
+The following are places that I strongly recommend for learning in a fun and enjoyable way:
+
+- [Hello Internet](http://www.hellointernet.fm)
+- [C.G.P. Grey](http://www.youtube.com/CGPGrey)
+- [Veritasium](http://www.youtube.com/user/1veritasium)
+- [Numberphile](http://www.youtube.com/user/numberphile)
+- [Computerphile](http://www.youtube.com/user/Computerphile)
+
 <a name="contact-me"></a>
-##Contact Me
+###Contact Me
 Email: [connor@connorgoldberg.com](mailto:connor@connorgoldberg.com)
 
 Others:

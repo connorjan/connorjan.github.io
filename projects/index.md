@@ -3,11 +3,11 @@ layout: page
 title: Projects
 ---
 
-#####This is where I will give details about projects I have done, or am currently working on!
+### - [RISC CPU](/projects/risc_cpu)
 
 Examples:
 
-- [RISC CPU](/projects/risc_cpu)
+
 - [This website](/)
 - Various CS things?
 

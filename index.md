@@ -9,10 +9,9 @@ This website is a work in progress, but feel free to look around. <br>
 Click the three bars in the top left corner of the webpage to get around!
 
 Thanks, <br>
-###Connor
+**Connor**
 
-[Contact me!](/about/#contact-me)
-
+[About me!](/about)
 
 <!--
 #####This is where I will give details about projects I have done, or am currently working on!
