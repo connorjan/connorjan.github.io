@@ -8,6 +8,7 @@ Hello! I'm Connor Goldberg.
 
 I am currently a second year student at [RIT](http://rit.edu "Rochester Institute of Technology"), and
 am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering) in Electrical Engineering.
+I am also in the 'Computer Option' which means I get to take more computer-oriented classes such as C++. 
 
 I am currently looking for a Co-op for 2014 during the Summer, or Summer and Fall. Ever since taking the class
 Digital Systems II last semester, I have been very interested in Digital Logic Design! More information about that
@@ -18,15 +19,6 @@ I love sports (namely Racquetball, Hockey, and Swimming), I enjoy [Geocaching](h
 all things Apple, [Kickstarter](http://www.kickstarter.com), and many other fun things! 
 I also enjoy programming and am familiar with Python, and C++.
 
-###Educational Things
-The following are places that I strongly recommend for learning in a fun and enjoyable way:
-
-- [Hello Internet](http://www.hellointernet.fm)
-- [C.G.P. Grey](http://www.youtube.com/CGPGrey)
-- [Veritasium](http://www.youtube.com/user/1veritasium)
-- [Numberphile](http://www.youtube.com/user/numberphile)
-- [Computerphile](http://www.youtube.com/user/Computerphile)
-
 <a name="contact-me"></a>
 ###Contact Me
 Email: [connor@connorgoldberg.com](mailto:connor@connorgoldberg.com)
@@ -36,6 +28,17 @@ Others:
 - [LinkedIn](http://www.linkedin.com/pub/connor-goldberg/64/7b9/4ba)
 - [Twitter](https://twitter.com/connorjan94)
 - [GitHub](https://github.com/connorjan)
+
+###Educational Things
+The following are places that I strongly recommend for learning in a fun and enjoyable way:
+
+- [Hello Internet](http://www.hellointernet.fm)
+- [C.G.P. Grey](http://www.youtube.com/CGPGrey)
+- [Veritasium](http://www.youtube.com/user/1veritasium)
+- [Numberphile](http://www.youtube.com/user/numberphile)
+- [Computerphile](http://www.youtube.com/user/Computerphile)
+
+
 
 
 <!--
