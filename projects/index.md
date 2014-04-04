@@ -3,13 +3,10 @@ layout: page
 title: Projects
 ---
 
-### - [RISC CPU](/projects/risc_cpu)
-
-Examples:
-
-
-- [This website](/)
-- Various CS things?
+- [RISC CPU](/projects/risc_cpu)
+	+ RISC Assembler (coming soon)
+- [This website](/)<br>
+- [My GitHub](https://github.com/connorjan)
 
 And here is my [Resume](/Resume.pdf "Resume")
 
