@@ -4,8 +4,6 @@ title: About Me
 ---
 <img style="float: right" src="/assets/Head.png" height="250">
 
-Hello! I'm Connor Goldberg, the baller.
-
 I am currently a second year student at [RIT](http://rit.edu "Rochester Institute of Technology"), and
 am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering) in Electrical Engineering.
 I am also in the 'Computer Option' which means I get to take more computer-oriented classes such as C++. 
