@@ -8,7 +8,10 @@ I would probably pick Verilog.
 
 <!--more-->
 
-Here is a simple full adder in VHDL:
+The first reason is that Verilog is based on C. VHDL is based on Ada. 
+I feel much more comfortable with C, and it is also used in more applications.  
+
+As an extremely simple example, here is a simple full adder in VHDL:
 
 ```vhdl
 LIBRARY ieee ;
@@ -26,7 +29,7 @@ BEGIN
 END LogicFunc ;
 ```
 
-And here is the same thing in Verilog:
+And here is the same adder in Verilog:
 
 ```verilog
 module FullAdder (Cin, x, y, s, Cout);
