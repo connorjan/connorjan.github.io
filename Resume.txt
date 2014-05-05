@@ -32,22 +32,22 @@ AssemblerAn assembler for a custom architecture designed in Digital Systems II 
 
 ACTIVITIES-
 RIT Racquetball: 
-Club/Team Member: 2012 – present
-Vice President: 2014 – present
+Club/Team Member: 2012 - present
+Vice President: 2014 - present
 
 RIT Rubik’s Cube Club: Co-founder
-Vice President 2013 – present
+Vice President 2013 - present
 	
-RIT Varsity Swimming Team: 2012 – 2013
+RIT Varsity Swimming Team: 2012 - 2013
 
 JOB EXPERIENCE-
-Teaching Assistant: 2014 – present
+Teaching Assistant: 2014 - present
 Instructing a lab section for Digital Systems II; this includes teaching the lab in addition to grading and providing office hours for help. The lab consists of using VHDL and Verilog with an FPGA to make small projects that eventually build up to a fully functional CPU.
 
-Assistant DJ: 2012 – present
+Assistant DJ: 2012 - present
 Assist in setting up and running an entire sound system for music, as well as running the karaoke system for various types of occasions such as weddings and parties. 
 
-VOLUNTEERING- 
+VOLUNTEERING-
 New Prospect Church Food Pantry 2008 – present
 Relay for Life
 
