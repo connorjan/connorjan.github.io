@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Connor Goldberg
 tagline:          'Electrical Engineer'
-description:      'Electricity is a Wonderful Thing.'
+description:      'Table of Contents'
 url:              http://connorgoldberg.com
 
 author:
@@ -19,7 +19,7 @@ paginate:         5
 paginate_path:    "blog/page:num"
 
 # Custom vars
-version:          1.0.0
+version:          1.1
 
 github:
   repo:           https://github.com/connorjan/lanyon
