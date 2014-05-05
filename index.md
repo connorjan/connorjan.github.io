@@ -11,7 +11,7 @@ Click the three bars in the top left corner of the webpage to get around!
 I a second year Electrical Engineering student, and I am currently 
 attending [Rochester Institute of Technology](http://www.rit.edu).  
 
-See more [about me here!](/about) Also check out [my projects](/projects).
+I am currently looking for a Summer (or Summer and Fall co-op/Internship)! So see more [about me here!](/about) Also check out [my projects](/projects).
 
 Thanks, <br>
 **Connor**
