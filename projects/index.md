@@ -4,7 +4,7 @@ title: Projects
 ---
 
 - [RISC CPU](/projects/risc_cpu)
-	+ RISC Assembler (coming soon)
+	+ [RISC Assembler](https://github.com/connorjan/RISC-Assembler "GitHub Repo") - full version coming soon! 
 - [This website](/)<br>
 - [My GitHub](https://github.com/connorjan)
 
