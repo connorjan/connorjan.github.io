@@ -4,12 +4,11 @@ title: About Me
 ---
 <img style="float: right" src="/assets/Head.png" height="250">
 
-I am currently a second year student at [RIT](http://rit.edu "Rochester Institute of Technology"), and
+I am currently a third year student at [RIT](http://rit.edu "Rochester Institute of Technology"), and
 am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering) in Electrical Engineering.
 I am also in the 'Computer Option' which means I get to take more computer-oriented classes such as C++. 
 
-I am currently looking for a Co-op for 2014 during the Summer, or Summer and Fall. I am willing to do anything, but ever since taking the class
-*Digital Systems II* last semester, I have been very interested in Digital Logic Design! More information about that
+I am currently looking for a Co-op for 2015 during the Spring Semester and Summer. I am very interested in Digital Logic Design! More information about that
 [here!](http://connorgoldberg.com/projects/risc_cpu)
 
 ###Interests
@@ -38,4 +37,4 @@ The following are some of my favorite podcasts and blogs which are fun to listen
 - [Numberphile](http://www.youtube.com/user/numberphile)
 - [Computerphile](http://www.youtube.com/user/Computerphile)
 
-Why don't you check out my [blog](/blog)!
+Why don't you check out my [blog](/blog)?

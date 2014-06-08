@@ -25,3 +25,5 @@ github:
   repo:           https://github.com/connorjan/lanyon
 
 excerpt_separator: <!--more-->
+
+exclude: [files, README.md]
