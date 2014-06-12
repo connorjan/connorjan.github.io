@@ -26,4 +26,4 @@ github:
 
 excerpt_separator: <!--more-->
 
-exclude: [files, README.md]
+exclude: [files, README.md, fabfile.*]
