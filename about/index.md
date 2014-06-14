@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-<img style="float: right" src="/assets/Head.png" height="250">
+<img style="float: right" src="/static/Head.png" height="250">
 
 I am currently a third year student at [RIT](http://rit.edu "Rochester Institute of Technology"), and
 am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering) in Electrical Engineering.

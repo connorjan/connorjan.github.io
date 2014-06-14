@@ -8,4 +8,4 @@ title: Projects
 - [This website](/)<br>
 - [My GitHub](https://github.com/connorjan)
 
-And here is my [Resume](/Resume.pdf "Resume")
+And here is my [Resume](/static/Resume.pdf "Resume")
