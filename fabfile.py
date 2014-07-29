@@ -32,6 +32,7 @@ Pushes a single file from the _static folder to the static directory on the serv
 Syntax in command line:
 $ fab push_file:<filename>
 """
+
 def push_file(fileName):
 	#sets working directories to the static directories
 	with lcd('_static'), cd('/var/www/%s/static/' % domain):
@@ -48,6 +49,11 @@ def push_file(fileName):
 		#clean up local temp stuff
 		run('rm temp.zip')
 		local('rm -rf temp temp.zip')
+
+def push_resume():
+		with lcd('_static'):
 		
-
-
+			run('rm /var/www/%s/www/Resume.pdf' % domain)
+			run('rm /var/www/%s/static/Resume.pdf' % domain)
+			put('Resume.pdf', '/var/www/%s/static/Resume.pdf' % domain)
+			run('cp /var/www/%s/static/Resume.pdf /var/www/%s/www/Resume.pdf' % (domain,domain))
