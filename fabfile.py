@@ -1,6 +1,6 @@
 from fabric.api import *
 from fabric.contrib.files import exists
-from fabric.context_managers import cd,lcd 
+from fabric.context_managers import cd,lcd
 
 env.user = 'connor'
 env.hosts = ['connorgoldberg.com']
@@ -39,18 +39,42 @@ def push_file(fileName):
 
 	with lcd('_static'), cd('/var/www/%s/static/' % domain):
 		
+		if exists('%s' % (fileName)):
+			#Then the file already exists in the static directory on the server
+			confirm = prompt('Warning: File: %s already exists. Do you wish to proceed? [y/n]: ' % fileName)
+			if (confirm == 'y'):
+				run('rm %s' % fileName)
+			else: 
+				print("Aborted by user.")
+				local('rm -rf temp temp.zip')
+				return 0
+
 		local('mkdir temp')
 		local('cp %s temp' % fileName)
 		local('zip -r temp temp')
-		if exists('%s' % (fileName)):
-			#Then the file already exists in the static directory on the server
-			run('rm %s' % fileName)
+
 		put('temp.zip', '/var/www/%s/static/temp.zip' % domain)
 		run('unzip -j temp.zip')
 
 		#clean up local temp stuff
 		run('rm temp.zip')
 		local('rm -rf temp temp.zip')
+
+def remove_file(fileName):
+	#sets working directories to the static directories
+
+	with cd('/var/www/%s/static/' % domain):
+		
+		if exists('%s' % (fileName)):
+			#Then the file already exists in the static directory on the server
+
+			confirm = prompt('Warning: About to remove: %s. Do you wish to proceed? [y/n]: ' % fileName)
+			if (confirm == 'y'):
+				run('rm %s' % fileName)
+			else: 
+				print("Aborted by user.")
+		else:
+			print("File does not exist.")
 
 def push_resume():
 		with lcd('_static'):
@@ -87,3 +111,19 @@ def push_file_private(fileName):
 		#clean up local temp stuff
 		run('rm temp.zip')
 		local('rm -rf temp temp.zip')
+
+def remove_file_private(fileName):
+	#sets working directories to the static directories
+
+	with cd('/var/www/%s/private/' % domain):
+		
+		if exists('%s' % (fileName)):
+			#Then the file already exists in the static directory on the server
+
+			confirm = prompt('Warning: About to remove: %s. Do you wish to proceed? [y/n]: ' % fileName)
+			if (confirm == 'y'):
+				run('rm %s' % fileName)
+			else: 
+				print("Aborted by user.")
+		else:
+			print("File does not exist.")
