@@ -3,10 +3,10 @@ layout: page
 title: Projects
 ---
 
-- [RISC Assembler](https://github.com/connorjan/RISC-Assembler "GitHub Repo")
+- <a href="https://github.com/connorjan/RISC-Assembler" target="_blank" title="GitHub Repo">RISC Assembler</a>
 - [RISC CPU](/projects/risc_cpu)
 - [This website](/)<br>
 - [Private ownCloud server](/2014/09/04/linux-experience/)
-- [My GitHub](https://github.com/connorjan)
+- <a href="https://github.com/connorjan" target="_blank">My GitHub</a>
 
-And here is my [Resume](/static/Resume.pdf "Resume")
+And here is my <a href="/static/Resume.pdf" target="_blank">Resume</a>

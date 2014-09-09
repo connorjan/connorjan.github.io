@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -27,3 +27,6 @@ github:
 excerpt_separator: <!--more-->
 
 exclude: [files, README.md, fabfile.*]
+
+#Plugins
+

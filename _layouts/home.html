@@ -9,7 +9,7 @@
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap" style="min-height: 100% ">
+    <div class="wrap">
       <div class="masthead">
         <div class="container">
           <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -25,15 +25,10 @@
         {{ content }}
       </div>
 
-    {% if page.title == "Home" %}
-    
-    <div id="bottomInst">
-    Test
-    {% endif %}
+      <div class="push"></div>
     </div>
-    
-
-    </div>
-
+      <div class="footer" style="text-align: center; font-size: 85%">
+        <p>Click the three bars in the top left corner of the webpage to get around.</p>
+      </div>
   </body>
 </html>

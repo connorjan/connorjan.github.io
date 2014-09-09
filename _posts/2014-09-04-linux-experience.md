@@ -4,11 +4,12 @@ title: My Linux Experience
 ---
 
 Three of my own recent projects have all involved linux in one way or the other. My website, my 
-[Raspberry Pi](http://www.raspberrypi.org), and most recently, my custom [ownCloud server](http://owncloud.org).
+<a href="http://www.raspberrypi.org" target="_blank">Raspberry Pi</a>, and most recently, my custom 
+<a href="http://owncloud.org" target="_blank">ownCloud server</a>.
 
 <!--more-->
 
-My website is hosted on a [Digital Ocean](https://www.digitalocean.com) virtual server running CentOS, my Raspberry Pi 
+My website is hosted on a <a href="https://www.digitalocean.com" target="_blank">Digital Ocean</a> virtual server running CentOS, my Raspberry Pi 
 is self-contained, and my ownCloud server is being hosted on a semi-old ASUS net-book (also running CentOS). There are
 many pros and cons to each. 
 

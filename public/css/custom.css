@@ -1,4 +1,14 @@
-#BottomText{
-    position: absolute;
-    padding-bottom: 25px;
+html, body {
+	height: 100%;
+}
+
+.wrap {
+	min-height: 100%;
+	/* height: auto !important;
+	height: 100%; */
+	margin: 0 auto -2em;
+}
+
+.footer, .push {
+height: 2em;
 }

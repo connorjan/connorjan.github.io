@@ -264,6 +264,7 @@ a.sidebar-nav-item:focus {
  * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
  */
 
+
 .wrap,
 .sidebar,
 .sidebar-toggle {
@@ -282,6 +283,7 @@ a.sidebar-nav-item:focus {
       -ms-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
+
 .wrap,
 .sidebar-toggle {
   -webkit-transition: left .3s ease-in-out;
