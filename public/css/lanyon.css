@@ -284,6 +284,7 @@ a.sidebar-nav-item:focus {
           transition: all .3s ease-in-out;
 }
 
+.footer,
 .wrap,
 .sidebar-toggle {
   -webkit-transition: left .3s ease-in-out;
