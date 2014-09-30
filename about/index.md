@@ -15,7 +15,7 @@ some great experiences!
 ###Interests
 I love sports (namely Racquetball, Hockey, and Swimming), I enjoy <a href="http://www.geocaching.com" target="_blank">Geocaching</a>, Rubik's Cubes and other puzzles, 
 all things Apple, backing projects on <a href="http://www.kickstarter.com" target="_blank">Kickstarter</a>, and many other fun things! 
-I also enjoy programming and am familiar with Verilog, VHDL, C++, Python, C, and some assembly. 
+I also enjoy programming and am familiar with Verilog, VHDL, C/C++, assembly, and Python. 
 
 <a name="contact-me"></a>
 ###Contact Me
@@ -30,7 +30,7 @@ Others:
 - <a href="https://github.com/connorjan" target="_blank">GitHub</a>
 
 ###Educational Things
-The following are some of my favorite podcasts and blogs which are fun to listen to / watch, but they are also very informative:
+The following are some of my favorite podcasts and blogs which are fun to listen to and watch, but they are also very informative:
 
 - <a href="http://www.hellointernet.fm" target="_blank">Hello Internet</a>
 - <a href="http://www.youtube.com/CGPGrey" target="_blank">C.G.P. Grey</a>
@@ -38,5 +38,3 @@ The following are some of my favorite podcasts and blogs which are fun to listen
 - <a href="http://www.youtube.com/user/Computerphile" target="_blank">Computerphile</a>
 
 Why don't you check out my [blog](/blog)?
-
-<a href="" target="_blank"></a>

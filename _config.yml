@@ -19,7 +19,7 @@ paginate:         5
 paginate_path:    "blog/page:num"
 
 # Custom vars
-version:          1.1
+version:          1.2
 
 github:
   repo:           https://github.com/connorjan/lanyon
@@ -27,6 +27,4 @@ github:
 excerpt_separator: <!--more-->
 
 exclude: [files, README.md, fabfile.*]
-
-#Plugins
 
