@@ -6,11 +6,10 @@ title: About Me
 
 I am currently a third year student at <a href="http://rit.edu" target="_blank">RIT</a>, and
 am in the <a href="http://www.rit.edu/kgcoe/program/bsms-electrical-engineering" target="_blank">BS/MS program</a> in Electrical Engineering.
-I am also in the 'Computer Option' which means I get to take more computer-oriented classes such as C++. 
+I am also in the 'Computer Option' which means I get to take more computer-oriented classes such as C++.
 
-I am currently looking for a Co-op for 2015 during the Spring Semester and Summer. I am very interested in 
-Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, and Embedded Systems, however, my main goal is to learn and get
-some great experiences! 
+I am currently looking for a Co-op for the Summer of 2015. I am very interested in 
+Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, Embedded Systems, and Software, however, my main goal is to learn and get some great experiences! 
 
 ###Interests
 I love sports (namely Racquetball, Hockey, and Swimming), I enjoy <a href="http://www.geocaching.com" target="_blank">Geocaching</a>, Rubik's Cubes and other puzzles, 
