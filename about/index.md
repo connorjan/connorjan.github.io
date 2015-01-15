@@ -8,11 +8,16 @@ I am currently a third year student at <a href="http://rit.edu" target="_blank">
 am in the <a href="http://www.rit.edu/kgcoe/program/bsms-electrical-engineering" target="_blank">BS/MS program</a> in Electrical Engineering.
 I am also in the 'Computer Option' which means I get to take more computer-oriented classes such as C++.
 
+I am currently on co-op at <a href="http://www.railcomm.com" target="_blank">RailComm</a> for the Spring semester! I am on the Embedded Systems 
+team doing some really great and fun projects.
+
 I am currently looking for a Co-op for the Summer of 2015. I am very interested in 
-Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, Embedded Systems, and Software, however, my main goal is to learn and get some great experiences! 
+Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, 
+Embedded Systems, and Software, however, my main goal is to learn and get some great experiences! 
 
 ###Interests
-I love sports (namely Racquetball, Hockey, and Swimming), I enjoy <a href="http://www.geocaching.com" target="_blank">Geocaching</a>, Rubik's Cubes and other puzzles, 
+I love sports (namely <a href="http://www.rit.edu/sg/rball" target="_blank">Racquetball</a>, Hockey, and Swimming), 
+I enjoy <a href="http://www.geocaching.com" target="_blank">Geocaching</a>, Rubik's Cubes and other puzzles, 
 all things Apple, backing projects on <a href="http://www.kickstarter.com" target="_blank">Kickstarter</a>, and many other fun things! 
 I also enjoy programming and am familiar with Verilog, VHDL, C/C++, assembly, and Python. 
 

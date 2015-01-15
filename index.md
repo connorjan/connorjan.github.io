@@ -6,7 +6,10 @@ title: Home
 #Welcome!
 
 I a third year Electrical Engineering student, and I am currently 
-attending <a href="http://rit.edu" target="_blank">Rochester Institute of Technology</a>. 
+attending <a href="http://rit.edu" target="_blank">Rochester Institute of Technology</a>.
+
+I am also on a co-op for the Spring semester, and I am working at 
+<a href="http://www.railcomm.com" target="_blank">RailComm</a>! 
 
 I am currently looking for a Co-op during the summer of 2015! 
 See more [about me here!](/about) Also check out [my projects](/projects),
