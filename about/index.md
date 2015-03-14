@@ -9,11 +9,11 @@ am in the <a href="http://www.rit.edu/kgcoe/program/bsms-electrical-engineering"
 I am also in the 'Computer Option' which means I take more of the computer-oriented classes.
 
 I am currently on co-op at <a href="http://www.railcomm.com" target="_blank">RailComm</a> for the Spring semester! I am on the Embedded Systems 
-team doing some really great and fun projects.
+team, working on some really great and fun projects.
 
-I am currently looking for a Co-op for the Summer of 2015. I am very interested in 
+I am currently looking for a Co-op for the Spring/Summer of 2016. I am very interested in 
 Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, 
-Embedded Systems, and Software, however, my main goal is to learn and get some great experiences! 
+Embedded Systems, and Software, however, my main goal is to learn and get some great experiences!
 
 ###Interests
 I love sports (namely <a href="http://www.rit.edu/sg/rball" target="_blank">Racquetball</a>, Hockey, and Swimming), 
