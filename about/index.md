@@ -4,16 +4,16 @@ title: About Me
 ---
 <img style="float: right" src="/static/Head.png" height="250">
 
-I currently am a third year student at <a href="http://rit.edu" target="_blank">RIT</a>, and
+I currently am a fourth year student at <a href="http://rit.edu" target="_blank">RIT</a>, and
 am in the <a href="http://www.rit.edu/kgcoe/program/bsms-electrical-engineering" target="_blank">BS/MS program</a> in Electrical Engineering.
-I am also in the 'Computer Option' which means I take more of the computer-oriented classes.
-
-I am currently on co-op at <a href="http://www.railcomm.com" target="_blank">RailComm</a> for the Spring semester! I am on the Embedded Systems 
-team, working on some really great and fun projects.
+I am also in the Digital Design concentration for my MS degree. 
 
 I am currently looking for a Co-op for the Spring/Summer of 2016. I am very interested in 
-Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, 
+Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, FPGAs
 Embedded Systems, and Software, however, my main goal is to learn and get some great experiences!
+
+I recently finished an 8 month co-op at <a href="/2015/09/26/railcomm" target="_blank">RailComm</a> working on some really 
+great projects.
 
 ###Interests
 I love sports (namely <a href="http://www.rit.edu/sg/rball" target="_blank">Racquetball</a>, Hockey, and Swimming), 
@@ -32,13 +32,5 @@ Others:
 - <a href="http://www.linkedin.com/pub/connor-goldberg/64/7b9/4ba" target="_blank">LinkedIn</a>
 - <a href="https://twitter.com/connorjan94" target="_blank">Twitter</a>
 - <a href="https://github.com/connorjan" target="_blank">GitHub</a>
-
-###Educational Things
-The following are some of my favorite podcasts and blogs which are fun to listen to and watch, but they are also very informative:
-
-- <a href="http://www.hellointernet.fm" target="_blank">Hello Internet</a>
-- <a href="http://www.youtube.com/CGPGrey" target="_blank">C.G.P. Grey</a>
-- <a href="http://www.youtube.com/user/numberphile" target="_blank">Numberphile</a>
-- <a href="http://www.youtube.com/user/Computerphile" target="_blank">Computerphile</a>
 
 Why don't you check out my [blog](/blog)?
