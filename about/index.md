@@ -8,7 +8,7 @@ I currently am a fourth year student at <a href="http://rit.edu" target="_blank"
 am in the <a href="http://www.rit.edu/kgcoe/program/bsms-electrical-engineering" target="_blank">BS/MS program</a> in Electrical Engineering.
 I am also in the Digital Design concentration for my MS degree. 
 
-I am currently looking for a Co-op for the Spring/Summer of 2016. I am very interested in 
+I am very interested in 
 Hardware Engineering, <a href="http://connorgoldberg.com/projects/risc_cpu" target="_blank">Digital Logic Design</a>, FPGAs
 Embedded Systems, and Software, however, my main goal is to learn and get some great experiences!
 

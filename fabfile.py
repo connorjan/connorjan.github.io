@@ -18,6 +18,7 @@ def push():
     run('rm -rf /var/www/%s/%s' % (domain, subdom))
     run('mv /var/www/%s/_site /var/www/%s/%s' % (domain, domain, subdom))
     local('rm -rf _site.zip')
+    push_static()
 
 #Pushes the entire _static folder to the static directory on the server
 def push_static():
