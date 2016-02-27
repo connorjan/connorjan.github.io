@@ -9,9 +9,9 @@ relative_permalinks: false
 title:               foo
 #tagline:             'foo's website
 description:         Foo's blog...
-url:                 http://example.com
+url:                 http://localhost:4000
 baseurl:  ""
-urlimg: http://example.com/images/
+urlimg: http://localhost:4000/images/
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"

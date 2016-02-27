@@ -1,10 +1,16 @@
+---
+layout: page
+permalink: /readme/
+title: "README - How to set up lanyon-plus jekyll theme"
+description: "README for setting up lanyon-plus jekyll theme on github pages or custom domain having static website"
+---
+{% raw %}
 ## lanyon-plus
 
-Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](https://github.com/mdo)
+### Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [Mark Otto](https://github.com/mdo)
 
-* add-ons by [Samir Amin](https://sbamin.com)
-* [Site features](https://sbamin.com/disclosure#i-classfa-fa-thumbs-o-up-credits-for-site-featuresi)
-* License: Open sourced under the [MIT license](https://sbamin.com/disclosure/#theme-major-credit--license).
+*   add-ons by [Samir B. Amin](https://sbamin.com)
+*   License: Open sourced under the [MIT license](LICENSE.md). 
 
 ### Required edits:
 
@@ -91,4 +97,4 @@ example.com/images/icons/android-icon-192x192.png
     *   Not required unless you are cross-posting about R language on blog aggregation site(s).
 
 END
-
+ {% endraw %}
