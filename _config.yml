@@ -9,9 +9,9 @@ relative_permalinks: false
 title:               foo
 #tagline:             'foo's website
 description:         Foo's blog...
-url:                 http://example.com
-baseurl:  ""
-urlimg: http://example.com/images/
+url: https://dyndna.github.io/lanyon-plus
+baseurl:
+urlimg: https://dyndna.github.io/lanyon-plus/images/
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"
