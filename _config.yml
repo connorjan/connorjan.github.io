@@ -34,7 +34,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 # About/contact
 author:
   name:              Foo Boo
-  url:               https://twitter.com/foo
+  url:               https://twitter.com/abcd
   avatar:         foo.png
   #email:           
 
@@ -78,7 +78,7 @@ links:
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
   - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/foo
+    url: https://twitter.com/abcd
     external: true
   - title: <i class="iconside iconm-feed2"></i> Feed
     url: /feed.xml

@@ -1,5 +1,5 @@
 - name: Twitter
-  url: https://twitter.com/foo
+  url: https://twitter.com/abcd
   class: fa fa-twitter-square
   title: "Follow me @foo"
 
@@ -9,7 +9,7 @@
   title: "Follow me +foo"
 
 - name: GitHub
-  url: https://github.com/foo
+  url: https://github.com/xyz123abc
   class: fa fa-github-square
   title: Code repository
 
