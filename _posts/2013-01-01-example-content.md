@@ -27,7 +27,7 @@ summaryfeed: false
 ## for twitter card with large image:
 # imagefeature: "http://img.youtube.com/vi/VEIrQUXm_hY/0.jpg"
 ## for twitter video card: (active for this page)
-videofeature: "https://www.youtube.com/watch?v=iG9CE55wbtY"
+videofeature: "https://www.youtube.com/embed/iG9CE55wbtY"
 imagefeature: "http://img.youtube.com/vi/iG9CE55wbtY/0.jpg"
 videocredit: tedtalks
 ---
