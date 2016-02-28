@@ -24,7 +24,7 @@ tags:
 | - | :- |
 | <i class="fa fa-car"></i>  | [Driving directions]({{ site.url }}/directions) | 
 | - | :- |
-| <i class="fa fa-paper-plane">  | *foo@xyz | 
+| <i class="fa fa-paper-plane">  | foo@xyz | 
 | - | :- |
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.owner.twitter }}" data-size="small" data-dnt="true">Tweet</a> <a href="javascript:window.print()" class="social-icons" title="Printer friendly format"><i class="fa fa-print"></i></a>

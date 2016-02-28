@@ -46,13 +46,13 @@ owner:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        foo
+  twitter:        abcd
   facebook:       
-  github:         foo
+  github:         xyz123abc
   stackexchange:  
   linkedin:       https://www.linkedin.com/in/foo
   instagram:      
-  flickr: foo
+  flickr:
   tumblr:  
   google_plus:    https://plus.google.com/+foo
   # orcid and google scholar IDs are different than standard username.
