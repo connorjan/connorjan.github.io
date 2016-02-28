@@ -2,13 +2,13 @@
 
 Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](https://github.com/mdo)
 
-* add-ons by [Samir Amin](https://sbamin.com)
-* [Site features](https://sbamin.com/disclosure#i-classfa-fa-thumbs-o-up-credits-for-site-featuresi)
+* add-ons by [Samir Amin](http://sbamin.com)
+* [Site features](http://sbamin.com/disclosure#i-classfa-fa-thumbs-o-up-credits-for-site-featuresi) | [Example contents](https://dyndna.github.io/lanyon-plus/blog/2013/01/01/example-content/)
 * License: Open sourced under the [MIT license](https://sbamin.com/disclosure/#theme-major-credit--license).
 
-[![Build Status](https://travis-ci.org/dyndna/lanyon-plus.svg?branch=v1.1.0)](https://travis-ci.org/dyndna/lanyon-plus)
+[![Build Status](https://travis-ci.org/dyndna/lanyon-plus.svg?branch=master)](https://travis-ci.org/dyndna/lanyon-plus)
 
-[Demo](https://dyndna.github.io/lanyon-plus) | [Download v1.1.0](https://github.com/dyndna/lanyon-plus/releases/tag/v1.1.0)
+[Demo](http://dyndna.github.io/lanyon-plus) | [Download v1.1.0](https://github.com/dyndna/lanyon-plus/releases/tag/v1.1.0)
 
 ### Required edits:
 

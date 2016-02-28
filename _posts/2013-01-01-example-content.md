@@ -10,8 +10,7 @@ category:
 # tags will also be used as html meta keywords.
 tags:
   - examples
-  - tag2
-  - R
+  - common_tag
 show_meta: true
 comments: true
 mathjax: true
@@ -28,16 +27,41 @@ summaryfeed: false
 ## for twitter card with large image:
 # imagefeature: "http://img.youtube.com/vi/VEIrQUXm_hY/0.jpg"
 ## for twitter video card: (active for this page)
-videofeature: "https://www.youtube.com/embed/VEIrQUXm_hY"
-imagefeature: "http://img.youtube.com/vi/VEIrQUXm_hY/0.jpg"
-videocredit: charlieroseshow
+videofeature: "https://www.youtube.com/watch?v=iG9CE55wbtY"
+imagefeature: "http://img.youtube.com/vi/iG9CE55wbtY/0.jpg"
+videocredit: tedtalks
 ---
 
-  Howdy! This is an example blog post that shows features supported in **lanyon-plus** theme. See raw post for required YAML header elements.
+Howdy! This is an example blog post that shows features supported in **lanyon-plus** theme. See [raw post](https://raw.githubusercontent.com/dyndna/lanyon-plus/master/_posts/2013-01-01-example-content.md) for required YAML header and liquid tag specifications.
 
 <!--more-->
 
-## Inline HTML elements
+* TOC
+{:toc}
+
+### Heading
+
+# H1
+{:.no_toc}
+
+## H2
+{:.no_toc}
+
+### H3
+{:.no_toc}
+
+#### H4
+{:.no_toc}
+
+##### H5
+{:.no_toc}
+
+###### H6
+{:.no_toc}
+
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+### Inline HTML elements
 
 HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
@@ -49,10 +73,6 @@ HTML defines a long list of available inline tags, a complete list of which can 
 - Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
 Most of these elements are styled by browsers with few modifications on our part.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Code
 
@@ -164,34 +184,34 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
   </tbody>
 </table>
 
-### text highlight:
+### Text highlight:
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. `Nullam id dolor id nibh ultricies vehicula ut id elit. Highlighted color will be removed during prinintg and replaced with underline.`{:.yelhglt}
 
-### blockquotes
+### Blockquotes
 
 #### stylized
 
 <blockquote class="style1">
-When you bring new things into a society, you can either, it's like the balance of the force. You can either use it for good or you can use it for evil. And what happens when something new: People have a tendency to overdo it; they abuse it.
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
 </blockquote>
 
 #### regular
 
 >When you bring new things into a society, you can either, it's like the balance of the force. You can either use it for good or you can use it for evil. And what happens when something new: People have a tendency to overdo it; they abuse it.
 
-### embed video
+### Embed video
 
 {% include youtube.html %}
 
-### embed picture, inline css
+### Embed picture
 
 {:.text-center img}
 ![Toy example]({{ site.urlimg }}/media/apple-icon.png "Toy example")
 
 ### Inline css attributes
 
-[Source](http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/){:target="_blank"}
+[MahJax source - link open in new window](http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/){:target="_blank"}
 
 ### MathJax
 
@@ -253,17 +273,16 @@ Below is a partial code showing main steps of merge function.
 
 <code data-gist-id="0fe211678316cc53370c" data-gist-file="merge_tables_datatable.R" data-gist-line="50-52,57,65-69,80,88-90,100-106"></code>
 
-### references
+### References
 
 Multiple[^1]<sup>,</sup>[^3] and with comments[^2]
------
 
-Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
+Want to see something else added? <a href="https://github.com/dyndna/lanyon-plus/issues/new">Open an issue.</a>
 
 [^1]: [lanyon theme](http://lanyon.getpoole.com)
 [^2]: 
     [lanyon-plus theme](https://github.com/dyndna/lanyon-plus "accessed on {{ page.date | date: '%B %d, %Y' }}")
 
-  >Excerpt: Sample post showing enabled features for post: `inline code`, `text highlight`{:.yelhglt}, code block with syntax highlights, embed gist, stylized blockquotes, video and image cards for twitter, markdown tables, inline and code bocks having mathjax support, references, print format, disqus comments, related posts, tags.
+    >Excerpt: Sample post showing enabled features for post: `inline code`, `text highlight`{:.yelhglt}, code block with syntax highlights, embed gist, stylized blockquotes, video and image cards for twitter, markdown tables, inline and code bocks having mathjax support, references, print format, disqus comments, related posts, tags.
 
 [^3]: [About]({{ site.url }}/about)
