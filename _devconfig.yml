@@ -16,7 +16,8 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"
 excerpt_separator: <!--more-->
-default_bg: sitelogo.png 
+default_bg: sitebg.jpg
+default_logo: sitelogo.png
 safe: false
 #timezone:    America/Chicago
 future:      true

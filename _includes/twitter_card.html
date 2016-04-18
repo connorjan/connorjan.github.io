@@ -9,7 +9,7 @@
     {% assign domain = site.urlimg %}
   {% endif %}
 <meta name="twitter:image" content="{{ domain }}{{ page.imagefeature }}">{% else %}
-<meta name="twitter:image" content="{{ site.urlimg }}{{ site.default_bg }}">{% endif %}
+<meta name="twitter:image" content="{{ site.urlimg }}{{ site.default_logo }}">{% endif %}
 <meta name="twitter:player" content="{{ page.videofeature }}">
 <meta name="twitter:player:width" content="1920">
 <meta name="twitter:player:height" content="1080">
@@ -25,4 +25,4 @@
 {% else %}
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.owner.twitter }}">
-<meta name="twitter:image" content="{% if page.imagesummary %}{{ site.urlimg }}{{ page.imagesummary }}{% else %}{{ site.urlimg }}{{ site.default_bg }}{% endif %}">{% endif %}
+<meta name="twitter:image" content="{% if page.imagesummary %}{{ site.urlimg }}{{ page.imagesummary }}{% else %}{{ site.urlimg }}{{ site.default_logo }}{% endif %}">{% endif %}
