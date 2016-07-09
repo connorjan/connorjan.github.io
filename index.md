@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-#Welcome!
+# Welcome!
 
 I am fourth year Electrical Engineering student currently 
 attending <a href="http://rit.edu" target="_blank">Rochester Institute of Technology</a>.

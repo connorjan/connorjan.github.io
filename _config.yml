@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+#highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -15,6 +15,10 @@ author:
   name:           'Connor Goldberg'
   url:            https://twitter.com/connorjan94
 
+gems:
+    - jekyll-paginate
+    - jekyll-sitemap
+
 paginate:         	3
 paginate_path:    	"blog/page:num"
 paginate_path_var:	"/blog" #Used in the index of the blog
@@ -27,5 +31,4 @@ github:
 
 excerpt_separator: <!--more-->
 
-exclude: [files, README.md, fabfile.*]
-
+exclude: [files, README.md, fabfile.*, .git]
