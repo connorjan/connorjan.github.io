@@ -3,54 +3,63 @@ Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: Googlebot-Image
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: Twitterbot
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: Bingbot
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: DuckDuckBot
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: ia_archiver
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: Applebot
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: facebookexternalhit
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: Facebot
 Disallow: /assets/
 Disallow: /CNAME
 Disallow: /*.md$
 Disallow: /files/
+Disallow: /static/
 
 User-agent: *
 Disallow: /

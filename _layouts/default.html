@@ -19,14 +19,19 @@ Credits: {{ site.url }}/disclosure
         <div class="container">
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <!-- <small>{{ site.tagline }}</small> -->
+            {% if site.tagline %}
+              <small>{{ site.tagline }}</small>
+            {% endif %}
             <div class="headicons">
-              <small><a href="{{ site.url }}/about" rel="me" title="About"><i class="iconm iconm-user"></i></a></small>
-              <small><a href="{{ site.url }}/blog" rel="me" title="Blog"><i class="iconm iconm-quill"></i></a></small>
-              <small><a href="{{ site.url }}/contact" rel="me" title="Contact"><i class="iconm iconm-envelop"></i></a></small> 
-            </div>           
-          </h3>
+              {% for item in site.header.icons %}
+                <small><a href="{{ item.url }}" rel="me" title="{{ item.title }}"{% if item.external %} target="_blank"{% endif %}><i class="{{ item.class }}"></i></a></small>
+              {% endfor %}
+            </div>
+           </h3>
         </div>
+        {% if site.progressbar %}
+          <div class="progress-bar"></div>
+        {% endif %}
       </div>
 
       <div class="container content">
@@ -54,6 +59,15 @@ Credits: {{ site.url }}/disclosure
         }, false);
       })(document);
     </script>
+
     {% include scripts.html %}
+
+    {% if site.progressbar and page.layout == "post" %}
+    <!-- Progress bar script! -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+      {% include scripts/progressbar.js %}
+    </script>
+    {% endif %}
+    
 </body>
 </html>

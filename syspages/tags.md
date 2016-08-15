@@ -9,7 +9,7 @@ category: base
 ---
 
 {:.text-center}
-## <i class="fa fa-paperclip" title="Featured"></i> <a href="{{ site.url }}/featured">Featured Posts</a>
+## <i class="fa fa-paperclip" title="Featured"></i> <a href="/featured">Featured Posts</a>
 
 <hr class="style17" style="margin:1.0rem 0;">
 
@@ -32,7 +32,7 @@ category: base
 <h2 id="{{ this_word }}">{{ this_word }}</h2>
 <ul class="post-list">
   {% for post in site.tags[this_word] %}{% if post.title != null %}
-  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time></span></a></li>
+  <li><a href="{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time></span></a></li>
   {% endif %}{% endfor %}
   </ul>
 {% endunless %}{% endfor %}

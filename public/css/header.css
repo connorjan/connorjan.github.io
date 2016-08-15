@@ -1,0 +1,15 @@
+.masthead {
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+}
+.container.content {
+  padding-top: 5rem;
+}
+.progress-bar{
+  height: 2px;
+  margin-bottom: -2px;
+  background: blue;
+  width: 0%;
+}

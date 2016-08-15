@@ -1,24 +1,21 @@
-- name: Twitter
-  url: https://twitter.com/abcd
-  class: fa fa-twitter-square
-  title: "Follow me @foo"
-
-- name: Google Plus
-  url: https://plus.google.com/+foo
-  class: fa fa-google-plus-square
-  title: "Follow me +foo"
-
-- name: GitHub
-  url: https://github.com/xyz123abc
-  class: fa fa-github-square
-  title: Code repository
+# Check out this link to view the classes: http://fontawesome.io/cheatsheet/
 
 - name: Contact
   url: "/contact/"
   class: fa fa-envelope-square
-  title: "Reach Us"
+  title: Contact
 
-- name: RSS
-  url: "/feed.xml"
-  class: fa fa-rss-square
-  title: "Subscribe to RSS"
+- name: LinkedIn
+  url: https://www.linkedin.com/in/connorgoldberg
+  class: fa fa-linkedin-square
+  title: Check out my LinkedIn
+
+- name: GitHub
+  url: https://github.com/connorjan
+  class: fa fa-github-square
+  title: All the code
+
+# - name: Twitter
+#   url: https://twitter.com/connorjan94
+#   class: fa fa-twitter-square
+#   title: "Follow me @connorjan94"

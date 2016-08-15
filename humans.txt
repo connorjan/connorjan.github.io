@@ -2,9 +2,8 @@
 ---
 
 /* TEAM */
-Primary Contact: foo
+Primary Contact: Connor Goldberg
 Site: {{ site.url }}/about/
-Twitter: https://twitter.com/{{ site.owner.twitter }}
 
 /* THANKS */
 Design Contributors: {{ site.url }}/disclosure/

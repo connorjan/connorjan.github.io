@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="page">
+{% if page.hide_title != true %}
   <h1 class="page-title">{{ page.title }}</h1>
+{% endif %}
     {% if page.show_meta == true %}
       {% include meta_info.html %}
     {% endif %} 

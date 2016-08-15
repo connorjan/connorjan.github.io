@@ -2,40 +2,32 @@
 layout: page
 title: About
 permalink: /about/
-show_meta: true
-# imagefeature path is relative to images/ directory.
-imagefeature: foo.png
+show_meta: false
 published: true
-description: "About example.com...."
-category: views
+description: "About Connor Goldberg"
 comments: false
-mathjax: false
-noindex: false
-sitemap:
-    priority: 0.7
-    changefreq: 'monthly'
-    lastmod: 2016-02-13
-# tags will be used as html meta keywords.    
-tags:
-  - "foo boo"
-  - "city tx"
 ---
 
-<div class="post-author text-center">                       
-            <img src="{{ site.urlimg }}{{ site.owner.avatar }}" alt="{{ site.owner.name }}'s photo" itemprop="image" class="post-avatar img-circle img-responsive"/> 
-<span class="social-icons" style="padding-top: 10px; padding-bottom: 1px;">
-<a href="{{ site.url }}/cv" title="Curriculum Vitae" class="social-icons"><i class="iconm iconm-profile" style="vertical-align: top;"></i></a>
-<a href="{{ site.url }}/about/publications/" class="social-icons" title="Publications"><i class="iconm iconm-file-pdf"></i></a>
-<a href="{{ site.owner.linkedin }}" class="social-icons" title="LinkedIn profile"><i class="iconm iconm-linkedin2"></i></a>
-</span>
-</div>
+<img height="200" style="float: right" src="{{ site.urlimg }}{{ site.owner.avatar }}" alt="{{ site.owner.name }}'s photo">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare lectus a purus rutrum, a hendrerit quam condimentum. Donec vel ante maximus, vulputate libero ac, rhoncus justo. Phasellus purus nisl, auctor id tristique eu, maximus quis leo. Mauris ultricies ante quis vehicula accumsan. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi elit, feugiat non scelerisque eget, ultrices nec est. Morbi a est iaculis, commodo quam congue, posuere quam. Phasellus venenatis finibus eros, vitae malesuada nisl gravida vitae.
+I currently am a fifth year student at [RIT](http://rit.edu){: target="_blank"}, and
+am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering){: target="_blank"} in Electrical Engineering. There are several areas of focus to choose from in the MS degree program and I am in the Digital Design path.
 
-Praesent ac sem quis diam fermentum fermentum. Nullam turpis metus, elementum sit amet venenatis sed, placerat eget erat. Ut convallis ipsum vitae volutpat tristique. Cras a tempor lorem, quis aliquet dui. Nunc vel leo erat. Donec posuere massa sed justo luctus, accumsan porttitor ligula laoreet. Suspendisse sit amet nisi ultrices, venenatis lorem vel, posuere turpis. Fusce eget dictum nisi. Proin eu diam nisi. Quisque ut quam quis sem tincidunt efficitur vitae nec ex. Pellentesque ut dolor eros. Ut faucibus semper ultricies. Vestibulum nec nisl in magna porttitor dictum.
+I am very interested in 
+Hardware Engineering, Digital Logic Design, Embedded Systems, and Software, however, my main goal is to learn and get some great experiences!
 
-Donec egestas eros arcu, id fermentum orci faucibus ac. Pellentesque facilisis elit eu tellus ultrices pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ut eros et mi dapibus condimentum. Sed ante metus, porttitor ut aliquet vitae, ullamcorper quis ex. Donec ac efficitur arcu, a malesuada dolor. Nulla magna arcu, semper quis augue sed, rhoncus porta urna. Duis dictum dapibus diam, ac sodales ipsum lobortis vel. Nulla ac dictum metus. Morbi sollicitudin tortor eu diam tristique, ut tincidunt tortor euismod. Integer non tincidunt metus. In tempus sem dapibus, venenatis mi placerat, condimentum orci. Nunc et tellus diam.
+I recently finished an 8 month co-op at <a href="/2015/09/26/railcomm" target="_blank">RailComm</a> working on some really 
+great projects.
 
-Nam imperdiet consequat lorem. Donec sagittis tortor eu dolor efficitur ullamcorper. Pellentesque dolor arcu, vestibulum quis laoreet at, tincidunt nec mauris. Praesent id laoreet arcu. Quisque blandit nunc at elit auctor, eget tempor nunc sodales. Cras venenatis lacinia tempus. Proin erat nisl, pharetra a massa volutpat, rhoncus pellentesque nisi. Mauris in elit dictum, egestas tellus et, laoreet velit. Nam auctor tempus augue sit amet fermentum. Nulla accumsan arcu quis efficitur aliquam. Nulla dapibus in neque eget facilisis. Nullam nisi augue, maximus at lectus sit amet, ornare malesuada ante. Morbi volutpat justo a urna pharetra elementum. Proin tempor ac felis ac consequat. Proin feugiat, nulla ac sagittis consequat, ante diam auctor tortor, in suscipit leo ante id dolor. Vivamus posuere pellentesque magna, sagittis blandit neque convallis sed.
+### Interests
+I love sports (namely <a href="http://www.rit.edu/sg/rball" target="_blank">Racquetball</a>, Hockey, and Swimming), 
+I enjoy <a href="http://www.geocaching.com" target="_blank">Geocaching</a>, Rubik's Cubes and other puzzles, backing projects on <a href="http://www.kickstarter.com" target="_blank">Kickstarter</a>, and many other fun things! 
+I also *really* enjoy programming and am very familiar with a bunch of languages but am most proficient with Verilog, Python, and C++.
 
-*[volutpat]: Tooltip for abbreviation.
+<a name="contact-me"></a>
+
+### Contact Me
+
+Go on over to ["Contact Me"](/contact) to get in touch.
+
+Or, you can go check out my [blog](/blog)!

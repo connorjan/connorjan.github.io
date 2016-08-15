@@ -63,16 +63,16 @@ Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](h
     *   Final, `images/icons/` should have following images with exact filenames and image size as specified in respective filenames. These images can be generated using online *favicon generator*. Replace `foo` with your site title or other name if desired.
 
 ~~~
-example.com/images/icons/apple-touch-icon-precomposed.png
-example.com/images/icons/apple-touch-icon-72x72-precomposed.png
-example.com/images/icons/apple-touch-icon-114x114-precomposed.png
-example.com/images/icons/apple-touch-icon-144x144-precomposed.png
-example.com/images/icons/apple-touch-icon-180x180.png
-example.com/images/icons/android-icon-192x192.png
+example.com/public/icons/apple-touch-icon-precomposed.png
+example.com/public/icons/apple-touch-icon-72x72-precomposed.png
+example.com/public/icons/apple-touch-icon-114x114-precomposed.png
+example.com/public/icons/apple-touch-icon-144x144-precomposed.png
+example.com/public/icons/apple-touch-icon-180x180.png
+example.com/public/icons/android-icon-192x192.png
 ~~~
 
 *   `pages/about.md`
-    *   YAML variable `imagefeature` shoud have image path relative to `images/` directory, i.e., `foo.png` will link to `example.com/images/foo.png`
+    *   YAML variable `imagefeature` shoud have image path relative to `images/` directory, i.e., `foo.png` will link to `example.com/public/foo.png`
     *   Specify `site.owner.avatar` and `site.owner.twitter` along with other variables in `_config.yml`
 *   `syspages/`:
     *   Edit page title and description in YAML front matter.

@@ -6,21 +6,20 @@ permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
 
 # Setup
-title:               foo
-#tagline:             'foo's website
-description:         Foo's blog...
-url: https://dyndna.github.io/lanyon-plus
-baseurl: "/lanyon-plus"
-urlimg: https://dyndna.github.io/lanyon-plus/images/
-markdown: kramdown
-paginate: 5
-paginate_path: "/blog/page:num"
-excerpt_separator: <!--more-->
-default_bg: sitebg.jpg
-default_logo: sitelogo.png 
-safe: false
-#timezone:    America/Chicago
-future:      true
+title:              Connor Goldberg
+tagline:            Electrical Engineer
+description:        Contents
+url:                http://connorgoldberg.com
+baseurl:            ""
+urlimg:             /static/
+markdown:           kramdown
+paginate:           3
+paginate_path:      "/blog/page:num"
+excerpt_separator:  <!--more-->
+default_bg:         sitebg.jpg
+default_logo:       sitelogo.png 
+safe:               false
+future:             true
 
 gems:
   - jekyll-paginate
@@ -29,60 +28,71 @@ gems:
   - kramdown
   - rouge
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
-
-# About/contact
-author:
-  name:              Foo Boo
-  url:               https://twitter.com/abcd
-  avatar:         foo.png
-  #email:           
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant", "_site", "_static"]
 
 # Owner/author information
+# Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
 owner:
-  name:           Foo Boo
-  avatar:         foo.png
-  #email:          
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        abcd
-  facebook:       
-  github:         xyz123abc
-  stackexchange:  
-  linkedin:       https://www.linkedin.com/in/foo
-  instagram:      
-  flickr:
-  tumblr:  
-  google_plus:    https://plus.google.com/+foo
-  # orcid and google scholar IDs are different than standard username.
-  orcid: xyz123abc
-  gscholar: xyz123abc
+  name:         Connor Goldberg
+  avatar:       prof.jpg
+  email:        connor@connorgoldberg.com
+  description:  Electrical Engineering
+ 
+  twitter:        connorjan94
+  facebook:       ConnorJan
+  github:         https://github.com/connorjan
+  linkedin:       https://www.linkedin.com/in/connorgoldberg 
 
-## sidebar links:
+# Show a progress bar on the header for blog posts
+progressbar: true
+
+header:
+    # Header icons:
+    # Check out this link to view the classes: http://fontawesome.io/cheatsheet/
+    icons:
+        - title: About
+          url: /about/
+          class: fa fa-user
+        - title: Contact
+          url: /contact/
+          class: fa fa-envelope
+        - title: Resume
+          url: /resume/
+          class: fa fa-file-text
+
+# footer links are located in /data/socialmedia.yml
+
+# sidebar links:
+# These will follow any pages that are of type:page
 # For external links add external: true
+
 links:
-  - title: <i class="iconside iconm-home"></i> Home
-    url: /
-  - title: <i class="iconside iconm-user"></i> About
-    url: /about/
-  - title: <i class="iconside iconm-quill"></i> Blog
-    url: /blog/
-  - title: <i class="fa fa-tags"></i> Tags
-    url: /tags/
-  - title: <i class="fa fa-archive"></i> Archive
-    url: /archive/
-  - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
+  - title:  Home
+    url:    /
+  - title:  About
+    url:    /about/
+  - title:  Projects
+    url:    /projects/
+  - title:  Blog
+    url:    /blog/
+  - title:  Contact
+    url:    /contact/
+  - title:  Resume
+    url:    /resume/
     external: true
-  - title: <i class="iconside iconm-envelop"></i> Contact
-    url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
-    external: true
-  - title: <i class="iconside iconm-feed2"></i> Feed
-    url: /feed.xml
+
+#sidebarfooter: "Add something here!"
+
+# Version is shown as the last item of the sidebar. Comment out to remove
+version: 2.0
+
+showcopyright: 
+    sidebar: true
+    footer: true
+
+cssoverrides:
+#  - file: /public/css/table.css
+   - file: /public/css/header.css
 
 # Google Custom Search:
 #google_search: xyz123abc
@@ -92,12 +102,9 @@ links:
 #twitter_widget_id: xyz123abc
 
 # Add disqus username for Disqus comment board:
-disqus_shortname: foo
+#disqus_shortname: foo
 
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   xyz123abc
 
-#### For dummy website only - remove if you wish ####
-github_repo: https://github.com/dyndna/lanyon-plus
-version: 1.1.0
 ## END ##

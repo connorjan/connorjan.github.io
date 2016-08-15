@@ -9,7 +9,7 @@
 
 <title>
   {% if page.title == "Home" %}
-    {{ site.title }} &middot; {{ site.tagline }}
+    {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
   {% else %}
     {{ page.title }} &middot; {{ site.title }}
   {% endif %}
@@ -55,13 +55,16 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/iconmoon.css">
 
 <!-- CSS -->
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.min.css">
+<link rel="stylesheet" href="/public/css/style.min.css">
 {% if page.category contains 'mypubs' or page.category contains 'myaoi' %} 
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/publ.css">
-<script src="{{ site.baseurl }}/public/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="/public/css/publ.css">
+  <script src="/public/js/jquery.min.js"></script>
 {% endif %}
+
 <!-- Add-on CSS to override system-wide defaults -->
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/addon.css">
+{% for override in site.cssoverrides %}
+  <link rel="stylesheet" href="{{ override.file }}">
+{% endfor %}
 
 <!-- CSS override per page -->
 {% if page.style %}
@@ -72,34 +75,36 @@
 
 <!-- Java scripts -->
 <!-- <script src="{{ site.baseurl }}/public/js/jquery.min.js"></script> -->
+{% if site.progressbar and page.layout == "post" %}
+<script src="/public/js/jquery-2.1.3.min.js"></script>
+{% endif %}
 
 <!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/icons/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/icons/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/icons/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/icons/apple-touch-icon-144x144-precomposed.png">
-<!-- 180x180 (precomposed) for iPhone 6 -->
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.url }}/images/icons/apple-touch-icon-180x180.png">
-<!-- 192x192 (precomposed) for Android -->
-<link rel="icon" type="image/png" sizes="192x192"  href="{{ site.url }}/images/icons/android-icon-192x192.png">
+<!-- Generously generated using http://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/public/icons/apple-touch-icon.png?v=2-0-0">
+<link rel="icon" type="image/png" href="/public/icons/favicon-32x32.png?v=2-0-0" sizes="32x32">
+<link rel="icon" type="image/png" href="/public/icons/favicon-16x16.png?v=2-0-0" sizes="16x16">
+<link rel="manifest" href="/public/icons/manifest.json?v=2-0-0">
+<link rel="mask-icon" href="/public/icons/safari-pinned-tab.svg?v=2-0-0" color="#ff0000">
+<link rel="shortcut icon" href="/favicon.ico?v=2-0-0">
+<meta name="msapplication-TileColor" content="#b91d47">
+<meta name="msapplication-TileImage" content="/public/icons/mstile-144x144.png?v=2-0-0">
+<meta name="msapplication-config" content="/public/icons/browserconfig.xml?v=2-0-0">
+<meta name="theme-color" content="#ffffff">
 
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
 {% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 
 <!-- RSS -->
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
 {% if page.mathjax %}
   {% include mathjax_support.html %}
+{% endif %}
+
+{% if page.addon_head %}
+  {{ page.addon_head }}
 {% endif %}
 
 </head>
