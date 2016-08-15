@@ -15,3 +15,11 @@ Last Semester I was on <a href="http://www.rit.edu/co-op.html" target="_blank">c
 but I am now looking for a full time position for after this school year!
 
 See more [about me here.](/about) Also check out [my projects](/projects) or [blog](/blog)!
+
+<hr>
+
+# Latest Post:
+
+{% assign post = site.posts.first %}
+{% assign scalefactor = 85 %}
+{% include index_post.html %}

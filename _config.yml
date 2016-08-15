@@ -2,7 +2,6 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 #permalink:           pretty
-permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
 
 # Setup
@@ -14,7 +13,8 @@ baseurl:            ""
 urlimg:             /static/
 markdown:           kramdown
 paginate:           3
-paginate_path:      "/blog/page:num"
+paginate_path:      /blog/page:num
+permalink:          /blog/:year/:month/:day/:title/
 excerpt_separator:  <!--more-->
 default_bg:         sitebg.jpg
 default_logo:       sitelogo.png 

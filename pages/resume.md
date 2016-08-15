@@ -1,7 +1,11 @@
 ---
-layout: page
+layout: default
 permalink: /resume/
 title: Resume
+style: |
+  .container {
+        max-width: 48rem;
+    } 
 ---
 
 View my Resume below, or download it [here](/static/Resume.pdf){: target="_blank"}!
