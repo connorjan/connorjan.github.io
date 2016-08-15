@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Blog @ example.com
-description: "Blogging on ...."
+title: Connor's Blog
 ---
 
 <div class="posts">
@@ -13,11 +12,35 @@ description: "Blogging on ...."
       </a>
     </h1>
 
-  {% if post.modified.size > 2 %}<span class="post-date indexpg" itemprop="dateModified" content="{{ post.modified | date: "%Y-%m-%d" }}"><i class="fa fa-edit" title="Last updated"> {{ post.modified | date_to_string }}</i> {% if post.category contains "featured" %}<a href="/featured" title="Featured posts"><i class="fa fa-paperclip" title="Featured" class="social-icons"></i></a>{% endif %}</span>{% else %}<span class="post-date indexpg" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}"><i class="fa fa-calendar" title="Date published"> {{ post.date | date_to_string }}</i> {% if post.category contains "featured" %}<a href="/featured" title="Featured posts"><i class="fa fa-paperclip" title="Featured" class="social-icons"></i></a>{% endif %}</span>{% endif %}
-
- {% if post.description.size > 140 %}{{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}{% else %}{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %} <a href="{{ post.url }}" title="Read more"><strong>Read more...</strong></a>
+    {% if post.modified.size > 2 %}
+    <span class="post-date indexpg" itemprop="dateModified" content="{{ post.modified | date: "%Y-%m-%d" }}">
+      <i class="fa fa-edit" title="Last updated"> {{ post.modified | date_to_string }}</i>
+      {% if post.category contains "featured" %}
+      <a href="/featured" title="Featured posts">
+        <i class="fa fa-paperclip" title="Featured" class="social-icons"></i>
+      </a>
+      {% endif %}
+    </span>
+    {% else %}
+    <span class="post-date indexpg" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">
+      <i class="fa fa-calendar" title="Date published"> {{ post.date | date_to_string }}</i>
+      {% if post.category contains "featured" %}
+      <a href="/featured" title="Featured posts">
+        <i class="fa fa-paperclip" title="Featured" class="social-icons"></i>
+      </a>
+      {% endif %}
+    </span>
+    {% endif %}
+    {% if post.description.size > 140 %}
+    {{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% else %}
+    {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% endif %}
   </div>
-  {% unless forloop.last %}<hr class="transp">{% endunless %}
+  <a href="{{ post.url }}"><strong>Read this post <i class="fa fa-chevron-right"></i></strong></a>
+  {% unless forloop.last %}
+  <hr class="transp">
+  {% endunless %}
   {% endfor %}
 </div>
 

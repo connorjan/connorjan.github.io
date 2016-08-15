@@ -16,10 +16,12 @@
 </script>
 {% endif %}
 
-<!-- gist embed -->
 {% if page.gistembed %}
-  {% include gist_embed.html %}
+<!-- gist embed -->
+{% include gist_embed.html %}
 {% endif %}
 
+{% if page.comments %}
 <!-- disqus comments -->
-{% if page.comments %}{% include disqus_comments.html %}{% endif %}
+{% include disqus_comments.html %}
+{% endif %}

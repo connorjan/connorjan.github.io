@@ -4,29 +4,68 @@ layout: default
 
 <div class="post">
   <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
-  <span class="post-date" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}"><i class="fa fa-calendar" title="Date published"> <a class="permalink" href="{{ page.url }}" itemprop="url" title="Permanent link to this post">{{ page.date | date_to_string }}</a> </i></span>
-  {% if page.modified.size > 2 %}{% assign moddate = page.modified | date_to_string %}{% assign pgdate = page.date | date_to_string %}{% unless moddate == pgdate | date_to_string %}<span class="post-date" itemprop="dateModified" content="{{ page.modified | date: "%Y-%m-%d" }}"><i class="fa fa-edit" title="Last updated"> {{ page.modified | date_to_string }}</i></span>{% endunless %}{% endif %}
-  <span class="post-tags" itemprop="keywords" content="{{ page.tags | array_to_sentence_string }}">{% for tag in page.tags %}{% if forloop.first %}<i class="fa fa-tags" title="page tags"></i>{% endif %} <a href="/tags/#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
-    {% if page.show_meta  %}
-      {% include meta_info.html %}
+  <span class="post-date" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">
+    <i class="fa fa-calendar" title="Date published">
+      <a class="permalink" href="/archive" itemprop="url" title="Archive">{{ page.date | date_to_string }}</a>
+    </i>
+  </span>
+  {% if page.modified.size > 2 %}
+  {% assign moddate = page.modified | date_to_string %}
+  {% assign pgdate = page.date | date_to_string %}
+  {% unless moddate == pgdate | date_to_string %}
+  <span class="post-date" itemprop="dateModified" content="{{ page.modified | date: "%Y-%m-%d" }}">
+    <i class="fa fa-edit" title="Last updated"> {{ page.modified | date_to_string }}</i>
+  </span>
+  {% endunless %}
+  {% endif %}
+  <span class="post-tags" itemprop="keywords" content="{{ page.tags | array_to_sentence_string }}">
+    {% for tag in page.tags %}
+    {% if forloop.first %}
+    <i class="fa fa-tags" title="page tags"></i>
     {% endif %}
+    <a href="/tags/#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>
+    {% unless forloop.last %} &bull; {% endunless %}{% endfor %}
+  </span>
+  {% if page.show_meta  %}
+  {% include meta_info.html %}
+  {% endif %}
   {{ content }}
   <hr>
   {% if page.tags contains 'R' %}
-   {% include rblogger.html %}
+  {% include rblogger.html %}
   {% endif %}
-  <span class="post-date metafoot" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}"><i class="fa fa-calendar" title="Date published"> <a class="permalink" href="{{ page.url }}" itemprop="url" title="Permanent link to this post">{{ page.date | date_to_string }}</a> </i></span>
-  {% if page.modified.size > 2 %}{% assign moddate = page.modified | date_to_string %}{% assign pgdate = page.date | date_to_string %}{% unless moddate == pgdate | date_to_string %}<span class="post-date metafoot" itemprop="dateModified" content="{{ page.modified | date: "%Y-%m-%d" }}"><i class="fa fa-edit" title="Last updated"> {{ page.modified | date_to_string }}</i></span>{% endunless %}{% endif %}
-  <span class="post-tags" itemprop="keywords" content="{{ page.tags | array_to_sentence_string }}">{% for tag in page.tags %}{% if forloop.first %}<i class="fa fa-tags" title="page tags"></i>{% endif %} <a href="/tags/#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
-    {% if page.show_meta %}
-      {% include meta_info.html %}
+  <span class="post-date metafoot" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">
+    <i class="fa fa-calendar" title="Date published">
+      <a class="permalink" href="/archive" itemprop="url" title="Archive">{{ page.date | date_to_string }}</a>
+    </i>
+  </span>
+  {% if page.modified.size > 2 %}
+  {% assign moddate = page.modified | date_to_string %}
+  {% assign pgdate = page.date | date_to_string %}
+  {% unless moddate == pgdate | date_to_string %}
+  <span class="post-date metafoot" itemprop="dateModified" content="{{ page.modified | date: "%Y-%m-%d" }}">
+    <i class="fa fa-edit" title="Last updated"> {{ page.modified | date_to_string }}</i>
+  </span>
+  {% endunless %}
+  {% endif %}
+  <span class="post-tags" itemprop="keywords" content="{{ page.tags | array_to_sentence_string }}">
+    {% for tag in page.tags %}
+    {% if forloop.first %}
+    <i class="fa fa-tags" title="page tags"></i>
     {% endif %}
+    <a href="/tags/#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>
+    {% unless forloop.last %} &bull; {% endunless %}{% endfor %}
+  </span>
+  {% if page.show_meta %}
+  {% include meta_info.html %}
+  {% endif %}
 </div>
 
 {% if page.hide_printmsg == false %}
   {% include printmsgposts.html %}
 {% endif %}
 
+{% if page.related %}
 <div class="page-break"></div>
 <div class="related">
   <h2>Related Posts</h2>
@@ -43,6 +82,7 @@ layout: default
   {% endfor %}
 </ul>
 </div>
+{% endif %}
 
 <div class="prevnext">
   {% if page.previous.url %}
@@ -59,4 +99,7 @@ layout: default
 
 <div class="page-break"></div>
 
-{% if site.disqus_shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+{% if site.disqus_shortname and page.comments == true %}
+<div id="disqus_thread"></div>
+<!-- /#disqus_thread -->
+{% endif %}
