@@ -10,14 +10,14 @@ comments: false
 
 <img height="200" style="float: right" src="{{ site.urlimg }}{{ site.owner.avatar }}" alt="{{ site.owner.name }}'s photo">
 
-I currently am a fifth year student at [RIT](http://rit.edu){: target="_blank"}, and
-am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering){: target="_blank"} in Electrical Engineering. There are several areas of focus to choose from in the MS degree program and I am in the Digital Design path.
+I currently am a fifth year student at [RIT](http://rit.edu){: target="_blank" style="color: #f36e21;"}, and
+am in the [BS/MS program](http://www.rit.edu/kgcoe/program/bsms-electrical-engineering){: target="_blank"} in Electrical Engineering.
+There are several areas of focus to choose from in the MS degree program and I am in the Digital Design path.
 
-I am very interested in 
-Hardware Engineering, Digital Logic Design, Embedded Systems, and Software, however, my main goal is to learn and get some great experiences!
+I am very interested in Hardware Engineering, Digital Logic Design, Embedded Systems, and Software,
+however, my main goal is to get some great experiences by learning and bringing my own experience to the table.
 
-I recently finished an 8 month co-op at <a href="/2015/09/26/railcomm" target="_blank">RailComm</a> working on some really 
-great projects.
+I recently finished a co-op at [Harris](/blog/2016/08/19/harris-co-op/){:style="color: #E21D22;"} and learned a lot while working on some really cool things.
 
 ### Interests
 I love sports (namely <a href="http://www.rit.edu/sg/rball" target="_blank">Racquetball</a>, Hockey, and Swimming), 
@@ -26,8 +26,8 @@ I also *really* enjoy programming and am very familiar with a bunch of languages
 
 <a name="contact-me"></a>
 
-### Contact Me
+### [Contact Me](/contact "Contact Me"){:style="color: #313131;"}
 
-Go on over to ["Contact Me"](/contact) to get in touch.
+Go on over to [Contact Me](/contact "Contact Me") to get in touch.
 
-Or, you can go check out my [blog](/blog)!
+Or, you can go check out my [blog](/blog "Blog")!

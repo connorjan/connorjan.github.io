@@ -73,10 +73,15 @@
    </style>
 {% endif %}
 
-<!-- Java scripts -->
-<!-- <script src="{{ site.baseurl }}/public/js/jquery.min.js"></script> -->
-{% if site.progressbar and page.layout == "post" %}
+<!-- Javascript sources -->
+{% if page.progressbar %}
 <script src="/public/js/jquery-2.1.3.min.js"></script>
+{% else %}
+{% for config in site.progressbar.configs %}
+{% if config.layout == page.layout %}
+<script src="/public/js/jquery-2.1.3.min.js"></script>
+{% endif %}
+{% endfor %}
 {% endif %}
 
 <!-- Icons -->

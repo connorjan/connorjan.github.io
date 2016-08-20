@@ -29,8 +29,14 @@ Credits: {{ site.url }}/disclosure
             </div>
            </h3>
         </div>
-        {% if site.progressbar %}
-          <div class="progress-bar"></div>
+        {% if page.progressbar %}
+        <div class="progress-bar" {% if page.progressbar.color %}style="background: {{ page.progressbar.color }};"{% endif %}></div>
+        {% else %}
+        {% for config in site.progressbar.configs %}
+        {% if config.layout == page.layout %}
+        <div class="progress-bar" {% if config.color %}style="background: {{ config.color }};"{% endif %}></div>
+        {% endif %}
+        {% endfor %}
         {% endif %}
       </div>
 
@@ -49,24 +55,30 @@ Credits: {{ site.url }}/disclosure
         var checkbox = document.querySelector('#sidebar-checkbox');
 
         document.addEventListener('click', function(e) {
-          var target = e.target;
+            var target = e.target;
+            if (!checkbox.checked || sidebar.contains(target)
+                || (target === checkbox || target === toggle))
+              return;
 
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
+            checkbox.checked = false;
+          }, false);
       })(document);
     </script>
 
     {% include scripts.html %}
 
-    {% if site.progressbar and page.layout == "post" %}
-    <!-- Progress bar script! -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    {% if page.progressbar %}
+    <script>
       {% include scripts/progressbar.js %}
     </script>
+    {% else %}
+    {% for config in site.progressbar.configs %}
+    {% if config.layout == page.layout %}
+    <script>
+      {% include scripts/progressbar.js %}
+    </script>
+    {% endif %}
+    {% endfor %}
     {% endif %}
     
 </body>

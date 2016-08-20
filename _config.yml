@@ -43,8 +43,14 @@ owner:
   github:         https://github.com/connorjan
   linkedin:       https://www.linkedin.com/in/connorgoldberg 
 
-# Show a progress bar on the header for blog posts
-progressbar: true
+# Show a scroll progress bar on the configured pages
+# This can be overridden on a per-page basis by the pages frontmatter like:
+# progressbar:
+#   color: "#123456"
+progressbar:
+  configs: 
+    - layout: post
+      #color: black
 
 header:
     # Header icons:

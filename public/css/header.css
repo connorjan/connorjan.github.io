@@ -10,6 +10,7 @@
 .progress-bar{
   height: 2px;
   margin-bottom: -2px;
-  background: blue;
+  /* Color is overridden from _config.yml or the page frontmatter */
+  background: #268bd2;
   width: 0%;
 }
