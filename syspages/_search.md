@@ -1,5 +1,5 @@
 ---
-layout: default_minimal
+layout: default
 title: "Search"
 description: "Search"
 permalink: /search/

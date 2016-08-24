@@ -584,7 +584,7 @@ a.sidebar-nav-item.inactive:hover
     user-select: none
 }
 .sidebar-toggle {
-    position: absolute;
+    position: fixed;
     top: .8rem;
     left: 1rem;
     display: block;
