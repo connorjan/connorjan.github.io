@@ -12,7 +12,8 @@ title: Connor's Blog
       </a>
     </h1>
 
-    {% if post.modified.size > 2 %}
+    {% if post.modified %}
+    {% assign dateModified = post.modified %}
     <span class="post-date indexpg" itemprop="dateModified" content="{{ post.modified | date: "%Y-%m-%d" }}">
       <i class="fa fa-edit" title="Last updated"> {{ post.modified | date_to_string }}</i>
       {% if post.category contains "featured" %}

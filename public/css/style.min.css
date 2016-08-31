@@ -467,7 +467,7 @@ h6 {
     /* Currently removed for progress-bar */
     /* padding-bottom: 1rem;*/
     margin-bottom: 1rem;
-    border-bottom: 1px solid #eee
+    border-bottom: 2px solid #eee
 }
 .masthead-title,
 .sidebar-item p:last-child {

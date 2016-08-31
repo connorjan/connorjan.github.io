@@ -9,7 +9,7 @@ layout: default
       <a class="permalink" href="/archive" itemprop="url" title="Archive">{{ page.date | date_to_string }}</a>
     </i>
   </span>
-  {% if page.modified.size > 2 %}
+  {% if page.modified %}
   {% assign moddate = page.modified | date_to_string %}
   {% assign pgdate = page.date | date_to_string %}
   {% unless moddate == pgdate | date_to_string %}
