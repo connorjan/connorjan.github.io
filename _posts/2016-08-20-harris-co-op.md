@@ -5,7 +5,7 @@ progressbar:
   color: "#E21D22"
 ---
 
-This summer I worked for [Harris](https://www.harris.com/){:target="_blank" style="color: #E21D22;"} down in Columbia, MD.
+This summer I worked for [Harris](https://www.harris.com/){:target="_blank" style="color: {{ site.data.colors.Harris }};"} down in Columbia, MD.
 It was a great experience; I met some really nice people and learned a ton. Overall it was a fantastic co-op.
 
 <!--more-->

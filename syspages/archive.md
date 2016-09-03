@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archive
+title: <i class="fa fa-archive"></i> Archive
 description: "Archive"
 permalink: /archive/
 category: base

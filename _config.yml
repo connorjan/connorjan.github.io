@@ -49,8 +49,8 @@ owner:
 #   color: "#123456"
 progressbar:
   configs: 
-    - layout: post
-      #color: black
+    # - layout: post
+    #   color: black
 
 header:
     # Header icons:
@@ -85,7 +85,6 @@ links:
     url:    /contact/
   - title:  Resume
     url:    /resume/
-    external: true
 
 #sidebarfooter: "Add something here!"
 
@@ -97,7 +96,6 @@ showcopyright:
     footer: true
 
 cssoverrides:
-#  - file: /public/css/table.css
    - file: /public/css/header.css
 
 # Google Custom Search:
@@ -112,5 +110,3 @@ cssoverrides:
 
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   xyz123abc
-
-## END ##

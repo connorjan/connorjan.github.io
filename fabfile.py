@@ -16,11 +16,9 @@ def push():
 	run('rm -f /var/www/%s/_site.zip' % (domain))
 	run('rm -rf /var/www/%s/_site' % (domain))
 	put('_site.zip', '/var/www/%s/_site.zip' % (domain))
-	run('cp /var/www/%s/_site.zip /var/www/%s/_site_revert.zip' % (domain, domain))
 	run('unzip /var/www/%s/_site.zip -d /var/www/%s' % (domain, domain))
 	run('rm -rf /var/www/%s/%s' % (domain, subdom))
 	run('mv /var/www/%s/_site /var/www/%s/%s' % (domain, domain, subdom))
-	local('mv _site.zip _previous.zip')
 	push_static()
 
 #Pushes the entire _static folder to the static directory on the server
@@ -28,7 +26,6 @@ def push_static():
 	local('zip -r _static _static')
 	run('rm -rf /var/www/%s/_static.zip /var/www/%s/static' % (domain,domain))
 	put('_static.zip', '/var/www/%s/_static.zip' % (domain))
-	run('cp /var/www/%s/_static.zip /var/www/%s/_static_revert.zip' % (domain, domain))
 	run('unzip /var/www/%s/_static.zip -d /var/www/%s' % (domain, domain))
 	run('mv /var/www/%s/_static /var/www/%s/static' % (domain, domain))
 	local('rm -rf _static.zip')
