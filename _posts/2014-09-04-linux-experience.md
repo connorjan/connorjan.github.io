@@ -1,6 +1,8 @@
 ---
 layout: post
 title: My Linux Experience
+tags:
+  - project
 ---
 
 Three of my own recent projects have all involved linux in one way or the other. My website, my 

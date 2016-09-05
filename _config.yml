@@ -49,8 +49,8 @@ owner:
 #   color: "#123456"
 progressbar:
   configs: 
-    # - layout: post
-    #   color: black
+    - layout: post
+      # color: black
 
 header:
     # Header icons:

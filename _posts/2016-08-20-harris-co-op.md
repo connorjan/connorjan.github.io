@@ -3,6 +3,8 @@ layout: post
 title: "My Co-op at Harris"
 progressbar:
   color: "#E21D22"
+tags:
+  - co-op
 ---
 
 This summer I worked for [Harris](https://www.harris.com/){:target="_blank" style="color: {{ site.data.colors.Harris }};"} down in Columbia, MD.

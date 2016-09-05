@@ -8,7 +8,7 @@ env.hosts = ['connorgoldberg.com']
 domain = 'connorgoldberg.com'
 subdom = 'www'
 
-def push():
+def push_site():
 	local('cp _static/Resume.pdf .')
 	local('jekyll build')
 	local('rm Resume.pdf')
@@ -19,6 +19,9 @@ def push():
 	run('unzip /var/www/%s/_site.zip -d /var/www/%s' % (domain, domain))
 	run('rm -rf /var/www/%s/%s' % (domain, subdom))
 	run('mv /var/www/%s/_site /var/www/%s/%s' % (domain, domain, subdom))
+
+def push():
+	push_site()
 	push_static()
 
 #Pushes the entire _static folder to the static directory on the server

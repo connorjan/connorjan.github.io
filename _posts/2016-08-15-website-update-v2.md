@@ -2,6 +2,8 @@
 layout: post
 title: An Update to my Website
 modified: 2016-08-24
+tags:
+  - project
 ---
 
 For the past couple weeks I have spent a bit of time updating my website. The overall aesthetics are extremely

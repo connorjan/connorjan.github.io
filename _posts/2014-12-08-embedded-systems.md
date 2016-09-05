@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Embedded Systems Design
+tags:
+  - RIT
 ---
 
 This semester (Fall 2014) I learned a lot about embedded systems design. It has been

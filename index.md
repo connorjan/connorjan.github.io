@@ -2,6 +2,11 @@
 layout: default
 permalink: /
 title: Home
+# banner:
+#   src: /banner.jpg
+#   height: 250px
+#   shift: 300px;
+#   text: Test!
 ---
 
 # Welcome!

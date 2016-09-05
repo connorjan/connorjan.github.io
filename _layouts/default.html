@@ -40,7 +40,16 @@ Credits: {{ site.url }}/disclosure
         {% endif %}
       </div>
 
-      <div class="container content">
+      {% if page.banner.src %}
+      <div class="banner"{% if page.banner.height %}style="height: {{ page.banner.height }};"{% endif %}>
+        <img src="{{ page.banner.src }}"{% if page.banner.shift %}style="top: -{{ page.banner.shift }};"{% endif %}>
+        {% if page.banner.text %}
+        <div class="bannertext">{{ page.banner.text }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <div class="container content"{% if page.banner.src %}style="padding-top: 50px; padding-bottom: 70px;"{% endif %}>
         {{ content }}
         {% include footer.html %}
       </div>

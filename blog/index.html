@@ -46,6 +46,12 @@ title: Connor's Blog
 </div>
 
 <div class="pagination">
+  
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/blog/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">No more posts :(</span>
+  {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="/blog/">Newer</a>
@@ -53,12 +59,6 @@ title: Connor's Blog
       <a class="pagination-item newer" href="/blog/page{{paginator.previous_page}}">Newer</a>
     {% endif %}
   {% else %}
-    <a class="pagination-item newer" href="/archive/" style="text-decoration: none;"><i class="fa fa-archive"></i> View Archive</span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/blog/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">No more posts :(</span>
+    <a class="pagination-item newer" href="/archive/" style="text-decoration: none;"><i class="fa fa-archive"></i> View Archive</a>
   {% endif %}
 </div>
-

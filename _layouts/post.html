@@ -88,12 +88,12 @@ layout: default
   {% if page.previous.url %}
     <a class="prevnext-item older" href="{{page.previous.url}}" title="{{ page.previous.title }}">Older</a>
   {% else %}
-    <span class="prevnext-item older">Older</span>
+    <span class="pagination-item older">No more posts :(</span>
   {% endif %}
   {% if page.next.url %}
     <a class="prevnext-item older" href="{{page.next.url}}" title="{{ page.next.title }}">Newer</a>
   {% else %}
-    <span class="prevnext-item older">Newer</span>
+    <a class="pagination-item newer" href="/archive/" style="text-decoration: none;"><i class="fa fa-archive"></i> View Archive</a>
   {% endif %}
 </div>
 
