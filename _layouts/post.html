@@ -12,7 +12,7 @@ layout: default
   {% if page.modified %}
   {% assign moddate = page.modified | date_to_string %}
   {% assign pgdate = page.date | date_to_string %}
-  {% unless moddate == pgdate | date_to_string %}
+  {% unless moddate == pgdate %}
   <span class="post-date" itemprop="dateModified" content="{{ page.modified | date: "%Y-%m-%d" }}">
     <i class="fa fa-edit" title="Last updated"> {{ page.modified | date_to_string }}</i>
   </span>
@@ -42,7 +42,7 @@ layout: default
   {% if page.modified.size > 2 %}
   {% assign moddate = page.modified | date_to_string %}
   {% assign pgdate = page.date | date_to_string %}
-  {% unless moddate == pgdate | date_to_string %}
+  {% unless moddate == pgdate %}
   <span class="post-date metafoot" itemprop="dateModified" content="{{ page.modified | date: "%Y-%m-%d" }}">
     <i class="fa fa-edit" title="Last updated"> {{ page.modified | date_to_string }}</i>
   </span>

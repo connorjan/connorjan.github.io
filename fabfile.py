@@ -11,7 +11,9 @@ subdom = 'www'
 def push_site():
 	local('rm -rf _site')
 	local('cp _static/Resume.pdf .')
+	local('if [ -f static ]; then rm static; fi')
 	local('jekyll build')
+	local('ln -s _static static')
 	local('rm Resume.pdf')
 	local('if [ -f _site.zip ]; then rm _site.zip; fi')
 	local('zip -r _site _site')

@@ -45,3 +45,5 @@ bower_components
 # More things
 *.pyc
 _private
+static
+*.lock
