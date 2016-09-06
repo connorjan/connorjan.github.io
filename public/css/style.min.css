@@ -226,23 +226,19 @@ img {
     vertical-align: middle
 }
 .banner {
+    align-items: center;
+    background-position: center;
+    display: flex;
     height: 300px;
-    margin-top: 60px;
+    top: 1em;
     overflow: hidden;
     position: relative;
-    z-index: -1;
+    text-align: center;
+    z-index: 1;
 }
 .bannertext {
-    position: absolute;
-    left: 0;
-    top: 50%;
     width: 100%;
-    text-align: center;
-}
-.banner img {
-    width: 100%;
-    border-radius: 0px;
-    position: absolute;
+    font-size: 200%;
 }
 .message,
 table {
@@ -486,7 +482,8 @@ h6 {
     /* Currently removed for progress-bar */
     /* padding-bottom: 1rem;*/
     margin-bottom: 1rem;
-    border-bottom: 2px solid #eee
+    border-bottom: 2px solid #eee;
+    z-index: 99;
 }
 .masthead-title,
 .sidebar-item p:last-child {
@@ -600,7 +597,7 @@ a.sidebar-nav-item.inactive:hover
     opacity: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none
+    user-select: none;
 }
 .sidebar-toggle {
     position: fixed;
@@ -611,7 +608,8 @@ a.sidebar-nav-item.inactive:hover
     color: #505050;
     background-color: #fff;
     border-radius: .25rem;
-    cursor: pointer
+    cursor: pointer;
+    z-index: 100;
 }
 .sidebar-toggle:before {
     display: inline-block;

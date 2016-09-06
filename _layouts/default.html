@@ -41,10 +41,9 @@ Credits: {{ site.url }}/disclosure
       </div>
 
       {% if page.banner.src %}
-      <div class="banner"{% if page.banner.height %}style="height: {{ page.banner.height }};"{% endif %}>
-        <img src="{{ page.banner.src }}"{% if page.banner.shift %}style="top: -{{ page.banner.shift }};"{% endif %}>
+      <div class="banner" style="background-image: url({{ page.banner.src }});{% if page.banner.height %}height: {{ page.banner.height }};{% endif %}{% if page.banner.position %}background-position-y: {{ page.banner.position }};{% endif %}">
         {% if page.banner.text %}
-        <div class="bannertext">{{ page.banner.text }}</div>
+        <div class="bannertext" style="{% if page.banner.textcolor %}color: {{ page.banner.textcolor }}{% endif %};{% if page.banner.textsize %}font-size: {{ page.banner.textsize }}{% endif %};">{{ page.banner.text }}</div>
         {% endif %}
       </div>
       {% endif %}

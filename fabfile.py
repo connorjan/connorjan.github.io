@@ -9,9 +9,11 @@ domain = 'connorgoldberg.com'
 subdom = 'www'
 
 def push_site():
+	local('rm -rf _site')
 	local('cp _static/Resume.pdf .')
 	local('jekyll build')
 	local('rm Resume.pdf')
+	local('if [ -f _site.zip ]; then rm _site.zip; fi')
 	local('zip -r _site _site')
 	run('rm -f /var/www/%s/_site.zip' % (domain))
 	run('rm -rf /var/www/%s/_site' % (domain))
@@ -26,6 +28,7 @@ def push():
 
 #Pushes the entire _static folder to the static directory on the server
 def push_static():
+	local('if [ -f _static.zip ]; then rm _static.zip; fi')
 	local('zip -r _static _static')
 	run('rm -rf /var/www/%s/_static.zip /var/www/%s/static' % (domain,domain))
 	put('_static.zip', '/var/www/%s/_static.zip' % (domain))
