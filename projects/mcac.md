@@ -51,4 +51,4 @@ this paper and I would highly recommend giving it a read!
 ## <i class="fa fa-file-text-o" aria-hidden="true"></i> My IEEE Paper <i class="fa fa-file-text-o" aria-hidden="true"></i> 
 
 {:.text-center}
-[Designing a Multi-Channel ADPCM CODEC Using a Top-down Approach](/static/cjg_mcac_ieee.pdf){:target="_blank"}
+[Designing a Multi-Channel ADPCM CODEC Using a Top-down Approach](/static/cjg_mcac_ieee.pdf?v=1-02){:target="_blank"}
