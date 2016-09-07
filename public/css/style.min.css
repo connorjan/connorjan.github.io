@@ -221,13 +221,13 @@ blockquote {
 }
 img {
     max-width: 100%;
-    margin: 0 0 1rem;
     border-radius: 5px;
     vertical-align: middle
 }
 .banner {
     align-items: center;
     background-position: center;
+    background-size: cover;
     display: flex;
     height: 300px;
     top: 1em;

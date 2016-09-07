@@ -1,6 +1,13 @@
 ---
 layout: page
 title: Cell Layouts
+banner:
+  src: /static/CJG_DFFX1.png
+  height: 300px
+  position: 85%
+  text: Cell Layouts
+  textsize: 300%
+  textcolor: white
 ---
 
 During the Fall semester of 2015 I was enrolled in a class called *Design of Digital Systems*. This 
