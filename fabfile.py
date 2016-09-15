@@ -11,10 +11,11 @@ subdom = 'www'
 def push_site():
 	local('rm -rf _site')
 	local('cp _static/Resume.pdf .')
-	local('if [ -f static ]; then rm static; fi')
+	local('if [ -e static ]; then rm static; fi')
 	local('jekyll build')
+	local('ln -s _static static')
 	local('rm Resume.pdf')
-	local('if [ -f _site.zip ]; then rm _site.zip; fi')
+	local('if [ -e _site.zip ]; then rm _site.zip; fi')
 	local('zip -r _site _site')
 	run('rm -f /var/www/%s/_site.zip' % (domain))
 	run('rm -rf /var/www/%s/_site' % (domain))
@@ -29,7 +30,7 @@ def push():
 
 #Pushes the entire _static folder to the static directory on the server
 def push_static():
-	local('if [ -f _static.zip ]; then rm _static.zip; fi')
+	local('if [ -e _static.zip ]; then rm _static.zip; fi')
 	local('zip -r _static _static')
 	run('rm -rf /var/www/%s/_static.zip /var/www/%s/static' % (domain,domain))
 	put('_static.zip', '/var/www/%s/_static.zip' % (domain))
@@ -92,7 +93,7 @@ def push_resume():
 			put('Resume.pdf', '/var/www/%s/static/Resume.pdf' % domain)
 			run('cp /var/www/%s/static/Resume.pdf /var/www/%s/www/Resume.pdf' % (domain,domain))
 
-#Pushes the entire _static folder to the static directory on the server
+#Pushes the entire _private folder to the private directory on the server
 def push_private():
 	local('zip -r _private _private')
 	run('rm -rf /var/www/%s/private' % domain)

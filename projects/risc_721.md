@@ -23,6 +23,7 @@ A quick overview of my ISA is:
 - 32-bit wide registers
 - register file depth of 32 general purpose registers
 - priority-encoded interrupt scheme with an interrupt vector table
+- Memory mapped I/O
 - 3 stage pipeline
 
 In addition to what is described in the ISA, a custom L1 cache memory was designed. I designed the cache memory using a
@@ -33,6 +34,11 @@ Both designs had support for the following optimizations:
 - Critical word first
 - Hardware block pre-fetching
 - Read priority over write on miss
+
+The processor was designed in Altera Quartus and then testbenched in Modelsim. Once functioning, the design was tested on a
+[Cyclone V FPGA](https://www.altera.com/products/boards_and_kits/dev-kits/partners/kit-terasic-cyclone-v-gx-starter.html#Overview){:target="_blank"}
+using the memory mapped I/O to read from the switches and push buttons, and write output data to the LEDs and 7-segment displays. It
+was very satisfying to see the design working in hardware compared to the simulations.
 
 Similar to the [RISC 521](/projects/risc_521) lab, I wrote a custom assembler for this processor design. This was my favorite
 part of the course. I could have just modified my [RISC-521 Assembler](https://github.com/connorjan/RISC521-Assembler){:target="_blank"}

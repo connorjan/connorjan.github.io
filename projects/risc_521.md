@@ -22,6 +22,7 @@ parameters were:
 - 4 stage pipeline with data dependency stall logic
 - 14-bit wide registers and instruction words
 - Von Neumann memory architecture
+- Memory mapped I/O
 - 4-way set associative L1 cache memory
 	* 8 words per block
 	* 4 blocks per set
@@ -31,5 +32,8 @@ In addition to the HDL design of the CPU, an assembler was written in the langua
 I decided to write one in python. This can be found [on my GitHub](https://github.com/connorjan/RISC521-Assembler){:target="_blank"}!
 This was an extremely fun project and I ended up making an even better one (which is explained in more detail on the page about
 the [RISC 721](/projects/risc_721)).
+
+Several assembly programs were written for this processor to test the I/O functionality. The processor design was
+compiled for an [Altera Cyclone V](https://www.altera.com/products/boards_and_kits/dev-kits/partners/kit-terasic-cyclone-v-gx-starter.html#Overview){:target="_blank"}.
 
 Read about the continuation (and more advanced version) of this course [here](/projects/risc_721)!
