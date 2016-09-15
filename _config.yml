@@ -23,9 +23,13 @@ future:             true
 
 gems:
   - jekyll-paginate
-  - jemoji
-  - font-awesome-sass
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-compose
+  - bundler
   - kramdown
+  - font-awesome-sass
+  - jemoji
   - rouge
 
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant", "_site", "_static", "fabfile.*"]
