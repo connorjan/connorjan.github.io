@@ -10,7 +10,7 @@ I also have some things on [GitHub](https://github.com/connorjan){:target="_blan
 - [Co-op at Harris](/blog/2016/08/20/harris-co-op/)
 - [A Multi-Channel ADPCM CODEC with IEEE Paper](/projects/mcac/)
 - [RISC 721 Processor](/projects/risc_721/)
-- [Cell Layouts](/projects/cell_layouts/)
+- [45 *nm* Standard Cell Library](/projects/cell_layouts/)
 - [RISC 521 Processor](/projects/risc_521/)
 - [Co-op at RailComm](/blog/2015/09/26/railcomm/)
 - [Embedded Systems Design](/blog/2014/12/08/embedded-systems/)

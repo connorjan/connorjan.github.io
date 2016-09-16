@@ -1,14 +1,15 @@
 ---
-layout: page
-title: Cell Layouts
+layout: default
+title: 45 nm Standard Cell Library
 banner:
   src: /static/CJG_DFFX1.png
   height: 300px
   position: 85%
-  text: Cell Layouts
+  text: Standard Cell Library
   textsize: 300%
   textcolor: white
 ---
+# 45 *nm* Standard Cell Library
 
 During the Fall semester of 2015 I was enrolled in a class called *Design of Digital Systems*. This 
 class introduced me to an entirely new stage of the digital design process I had never seen before:
