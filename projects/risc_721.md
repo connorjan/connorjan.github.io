@@ -47,7 +47,9 @@ turned out and I wanted to put the time into designing a proper one.
 
 I am extremely proud of my [RISC-721 Assembler](https://github.com/connorjan/RISC-721-Assembler){:target="_blank"}. I designed the assembler
 in Python using OOP methodology and made great use of inheritance. My assembler has many features as well as robust error checking
-functionality for the user. An example assembly file written in my assembly language can be found [here](/static/Matrix_Assembly.png){:target="_blank"}.
+functionality for the user. I wrote an extensive user's guide for the assembler using markdown and LaTeX.
+I highly recommend checking it out [here](/static/cjg_Assembler_User_Guide.pdf){:target="_blank"}!
+An example assembly file written in my assembly language can be found [here](/static/Matrix_Assembly.png){:target="_blank"}.
 
 The course was a lot of work and very challenging, however it caused me to think a lot and open my mind to some new methods of designing
 both hardware and software.
