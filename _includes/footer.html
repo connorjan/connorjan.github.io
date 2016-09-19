@@ -9,17 +9,11 @@
                       </a>
                     </li>
                   {% endfor %} 
-               <!--    <li>
-                    <a href="/URL" rel="me" target="_blank" class="social-icons" title="TITLE">
-                      <span class="fa-stack fa-lg">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                  </li> -->
                 </ul>
               </div>
               {% if site.showcopyright.footer %}
-                <h6 class="text-footer"><a rel="license" href="/disclosure/" title="CC BY-NC-SA 4.0 License, link to site disclosure" class="social-icon"><i class="fa fa-creative-commons fancy"></i></a> <a rel="license" href="/disclosure/" title="CC BY-NC-SA 4.0 License, link to site disclosure">{{ site.time | date: '%Y' }}</a>: <a href="/" title="Home">{{ site.owner.name }}</a> | <a href="/about/" rel="me">About</a></h6>
+                <h6 class="text-footer">
+                  <a href="/disclosure/">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}</a>
+                </h6>
               {% endif %}
             </div>
