@@ -8,6 +8,6 @@ style: |
     } 
 ---
 
-View my Resume below, or download it [here](/static/Resume.pdf?v=2-0){: target="_blank"}!
+View my Resume below, or download it [here](/static/Resume.pdf{% if site.data.resumeversion.value %}?v={{ site.data.resumeversion.value }}{% endif %}){: target="_blank"}!
 
-<embed src="/static/Resume.pdf" width="100%" style="height: 100vh;">
+<embed src="/static/Resume.pdf{% if site.data.resumeversion.value %}?v={{ site.data.resumeversion.value }}{% endif %}" width="100%" style="height: 100vh;">
