@@ -1,6 +1,7 @@
 from fabric.api import *
 from fabric.contrib.files import exists
 from fabric.context_managers import cd,lcd
+import os
 
 env.user = 'connor'
 env.hosts = ['connorgoldberg.com']
@@ -9,12 +10,12 @@ domain = 'connorgoldberg.com'
 subdom = 'www'
 
 def push_site():
-	local('rm -rf _site')
-	local('cp _static/Resume.pdf .')
+	local('if [ -e _site ]; then rm -rf _site; fi')
+	local('if [ -e _static/Resume.pdf ]; then cp _static/Resume.pdf .; fi')
 	local('if [ -e static ]; then rm static; fi')
 	local('jekyll build')
-	local('ln -s _static static')
-	local('rm Resume.pdf')
+	local('if [ -e static ]; then ln -s _static static; fi')
+	local('if [ -e Resume.pdf ]; then rm Resume.pdf; fi')
 	local('if [ -e _site.zip ]; then rm _site.zip; fi')
 	local('zip -r _site _site')
 	run('rm -f /var/www/%s/_site.zip' % (domain))
@@ -30,13 +31,14 @@ def push():
 
 #Pushes the entire _static folder to the static directory on the server
 def push_static():
-	local('if [ -e _static.zip ]; then rm _static.zip; fi')
-	local('zip -r _static _static')
-	run('rm -rf /var/www/%s/_static.zip /var/www/%s/static' % (domain,domain))
-	put('_static.zip', '/var/www/%s/_static.zip' % (domain))
-	run('unzip /var/www/%s/_static.zip -d /var/www/%s' % (domain, domain))
-	run('mv /var/www/%s/_static /var/www/%s/static' % (domain, domain))
-	local('rm -rf _static.zip')
+	if os.path.isdir("static"):
+		local('if [ -e _static.zip ]; then rm _static.zip; fi')
+		local('zip -r _static _static')
+		run('rm -rf /var/www/%s/_static.zip /var/www/%s/static' % (domain,domain))
+		put('_static.zip', '/var/www/%s/_static.zip' % (domain))
+		run('unzip /var/www/%s/_static.zip -d /var/www/%s' % (domain, domain))
+		run('mv /var/www/%s/_static /var/www/%s/static' % (domain, domain))
+		local('rm -rf _static.zip')
 
 """
 Pushes a single file from the _static folder to the static directory on the server.
