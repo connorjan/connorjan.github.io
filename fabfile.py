@@ -31,7 +31,7 @@ def push():
 
 #Pushes the entire _static folder to the static directory on the server
 def push_static():
-	if os.path.isdir("static"):
+	if os.path.isdir("_static"):
 		local('if [ -e _static.zip ]; then rm _static.zip; fi')
 		local('zip -r _static _static')
 		run('rm -rf /var/www/%s/_static.zip /var/www/%s/static' % (domain,domain))
