@@ -17,7 +17,7 @@ paginate_path:      /blog/page:num
 permalink:          /blog/:year/:month/:day/:title/
 excerpt_separator:  <!--more-->
 default_bg:         sitebg.jpg
-default_logo:       sitelogo.png 
+default_logo:       sitelogo.png
 safe:               false
 future:             true
 
@@ -45,6 +45,7 @@ owner:
   twitter:        connorjan94
   facebook:       ConnorJan
   github:         https://github.com/connorjan
+  repo:           https://github.com/connorjan/connorjan.github.io
   linkedin:       https://www.linkedin.com/in/connorgoldberg 
 
 # Show a scroll progress bar on the configured pages

@@ -1,6 +1,6 @@
 from fabric.api import *
 from fabric.contrib.files import exists
-from fabric.context_managers import cd,lcd
+from fabric.context_managers import cd, lcd
 import os
 
 env.user = 'connor'
@@ -9,12 +9,17 @@ env.hosts = ['connorgoldberg.com']
 domain = 'connorgoldberg.com'
 subdom = 'www'
 
+def push():
+	backup()
+	push_site()
+	push_static()
+
 def push_site():
 	local('if [ -e _site ]; then rm -rf _site; fi')
 	local('if [ -e _static/Resume.pdf ]; then cp _static/Resume.pdf .; fi')
 	local('if [ -e static ]; then rm static; fi')
 	local('jekyll build')
-	local('if [ -e static ]; then ln -s _static static; fi')
+	local('if [ -e _static ]; then ln -s _static static; fi')
 	local('if [ -e Resume.pdf ]; then rm Resume.pdf; fi')
 	local('if [ -e _site.zip ]; then rm _site.zip; fi')
 	local('zip -r _site _site')
@@ -25,12 +30,10 @@ def push_site():
 	run('rm -rf /var/www/%s/%s' % (domain, subdom))
 	run('mv /var/www/%s/_site /var/www/%s/%s' % (domain, domain, subdom))
 
-def push():
-	push_site()
-	push_static()
-
-#Pushes the entire _static folder to the static directory on the server
 def push_static():
+	"""
+	Pushes the entire _static folder to the static directory on the server
+	"""
 	if os.path.isdir("_static"):
 		local('if [ -e _static.zip ]; then rm _static.zip; fi')
 		local('zip -r _static _static')
@@ -40,15 +43,37 @@ def push_static():
 		run('mv /var/www/%s/_static /var/www/%s/static' % (domain, domain))
 		local('rm -rf _static.zip')
 
-"""
-Pushes a single file from the _static folder to the static directory on the server.
-Syntax in command line:
-$ fab push_file:<filename>
-"""
+def backup_dir(name):
+	if exists('%s.zip.bak' % name):
+		run('rm %s.zip.bak' % name)
+	run('zip -r %s.zip.bak %s' % (name, name))
+
+def backup():
+	with cd('/var/www/%s/' % domain):
+		backup_dir('static')
+		backup_dir('www')
+
+def restore_dir(name):
+	if exists('%s.zip.bak' % name):
+		run('rm -rf %s' % name)
+		run('unzip %s.zip.bak' % name)
+		run('rm %s.zip.bak' % name)
+	else:
+		print "Could not find: %s.zip.bak" % name
+
+def restore():
+	with cd('/var/www/%s/' % domain):
+		restore_dir('static')
+		restore_dir('www')
 
 def push_file(fileName):
-	#sets working directories to the static directories
-
+	"""
+	Pushes a single file from the _static folder to the static directory on the server.
+	Syntax in command line:
+	$ fab push_file:<filename>
+	"""
+	
+	# sets working directories to the static directories
 	with lcd('_static'), cd('/var/www/%s/static/' % domain):
 		
 		if exists('%s' % (fileName)):
@@ -73,8 +98,7 @@ def push_file(fileName):
 		local('rm -rf temp temp.zip')
 
 def remove_file(fileName):
-	#sets working directories to the static directories
-
+	# sets working directories to the static directories
 	with cd('/var/www/%s/static/' % domain):
 		
 		if exists('%s' % (fileName)):
@@ -89,14 +113,17 @@ def remove_file(fileName):
 			print("File does not exist.")
 
 def push_resume():
-		with lcd('_static'):
-			run('rm /var/www/%s/www/Resume.pdf' % domain)
-			run('rm /var/www/%s/static/Resume.pdf' % domain)
-			put('Resume.pdf', '/var/www/%s/static/Resume.pdf' % domain)
-			run('cp /var/www/%s/static/Resume.pdf /var/www/%s/www/Resume.pdf' % (domain,domain))
+	with lcd('_static'):
+		run('rm /var/www/%s/www/Resume.pdf' % domain)
+		run('rm /var/www/%s/static/Resume.pdf' % domain)
+		put('Resume.pdf', '/var/www/%s/static/Resume.pdf' % domain)
+		run('cp /var/www/%s/static/Resume.pdf /var/www/%s/www/Resume.pdf' % (domain,domain))
 
-#Pushes the entire _private folder to the private directory on the server
 def push_private():
+	"""
+	Pushes the entire _private folder to the private directory on the server
+	"""
+
 	local('zip -r _private _private')
 	run('rm -rf /var/www/%s/private' % domain)
 	put('_private.zip', '/var/www/%s/_private.zip' % (domain))
@@ -106,8 +133,7 @@ def push_private():
 	local('rm -rf _private.zip')
 
 def push_file_private(fileName):
-	#sets working directories to the static directories
-
+	# sets working directories to the static directories
 	with lcd('_private'), cd('/var/www/%s/private/' % domain):
 		
 		local('mkdir temp')
@@ -124,8 +150,7 @@ def push_file_private(fileName):
 		local('rm -rf temp temp.zip')
 
 def remove_file_private(fileName):
-	#sets working directories to the static directories
-
+	# sets working directories to the static directories
 	with cd('/var/www/%s/private/' % domain):
 		
 		if exists('%s' % (fileName)):
