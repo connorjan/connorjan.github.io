@@ -167,6 +167,9 @@ pre code {
     color: inherit;
     background-color: transparent
 }
+.custom-footer {
+    display: block;
+}
 .highlight {
     padding: 7px 7px 7px 10px;
     border: 1px solid #ddd;
@@ -502,7 +505,7 @@ h6 {
     color: silver;
     letter-spacing: 0
 }
-@media (max-width: 48em) {
+@media screen and (max-width: 48em) {
     .masthead-title {
         text-align: center
     }
@@ -1462,11 +1465,6 @@ blockquote.style1:last-child {
 .qrcode {
     display: none
 }
-@media print {
-    .qrcode {
-        display: block
-    }
-}
 .gcsc-branding,
 .gsc-result-info,
 .gsc-url-bottom,
@@ -1553,69 +1551,4 @@ blockquote.style1:last-child {
     border: 0 solid #FFF;
     background-color: #FFF;
     color: #999
-}
-@media print {
-    .custom-footer,
-    .prevnext,
-    .related,
-    .sidebar-toggle,
-    .social-icons,
-    .social-icons a:link,
-    .text-tweets,
-    .ytube-video-container,
-    h6.text-footer,
-    iframe#twitter-widget-0,
-    span.post-date a:link:after,
-    span.post-date.metafoot,
-    span.post-share,
-    span.post-tags {
-        display: none
-    }
-    body {
-        background: #fff;
-        font-family: Georgia, ‘Times New Roman’, serif
-    }
-    p {
-        font-size: 12pt
-    }
-    code.yelhglt {
-        background: initial;
-        text-decoration: underline;
-        color: inherit
-    }
-    abbr[title] {
-        border-bottom: 0;
-        font-weight: 400;
-        font-size: inherit
-    }
-    .container {
-        max-width: 60rem
-    }
-    .container.content {
-        width: 100%;
-        margin: auto;
-        float: none;
-        background: 0 0
-    }
-    table.narrowtable {
-        font-size: small
-    }
-    .page-break,
-    .printMsg {
-        display: block
-    }
-    .container.content a:link {
-        font-weight: 500;
-        text-decoration: none;
-        color: #06c
-    }
-    .container.content a:link:after {
-        content: " (" attr(href) ") "
-    }
-    .page-break {
-        page-break-before: always
-    }
-    ul#markdown-toc {
-        display: none
-    }
 }

@@ -101,7 +101,8 @@ showcopyright:
     footer: true
 
 cssoverrides:
-   - file: /public/css/header.css
+  - file: /public/css/header.css
+  - file: /public/css/print.css
 
 # Google Custom Search:
 #google_search: xyz123abc
