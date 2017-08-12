@@ -78,4 +78,4 @@ think it was a great experience.
 
 * [GitHub Repo](https://github.com/TightSquad/HABIP){:target="_blank"}
 * [School Project Website](http://edge.rit.edu/edge/P17104/public/Home){:target="_blank"}
-* [Team Technical Paper]({{ site.url }}/static/habip_paper.pdf)
+* [Team Technical Paper]({{ site.url }}/static/habip_paper.pdf){:target="_blank"}
