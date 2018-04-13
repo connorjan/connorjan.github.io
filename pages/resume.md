@@ -10,4 +10,4 @@ style: |
 
 View my Resume below, or download it [here](/static/Resume.pdf{% if site.data.resumeversion.value %}?v={{ site.data.resumeversion.value }}{% endif %}){: target="_blank"}!
 
-<embed src="/static/Resume.pdf{% if site.data.resumeversion.value %}?v={{ site.data.resumeversion.value }}{% endif %}" width="100%" style="height: 100vh;">
+<embed src="/static/Resume.pdf{% if site.data.resume.version %}?v={{ site.data.resume.version }}{% endif %}" width="100%" style="height: 100vh;">

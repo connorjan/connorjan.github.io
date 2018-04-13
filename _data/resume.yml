@@ -1,4 +1,5 @@
 # Data for the /resume/ page
-# Access is site.data.resume
+# Access is site.data.resume.<var>
 
 name: Connor Goldberg
+version: 3-0
